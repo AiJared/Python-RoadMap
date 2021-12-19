@@ -21,7 +21,7 @@ print(len(my_dict))
 # Dictionaries also supprt multiple data types
 print(my_dict['age']) # int
 print(my_dict['is_tall']) # bool
-print(my_dict['friends'])
+print(my_dict['friends'])# str
 
 # Check if it is a dictionary
 print(type(my_dict))
