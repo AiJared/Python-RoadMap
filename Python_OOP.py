@@ -27,3 +27,22 @@ class Point:
         return math.sqrt(
             (self.x - other_point.x) ** 2 +
             (self.y - other_point.y) ** 2)
+
+class UsefulClass:
+    '''This class might be usefull to other modules'''
+    pass
+
+def main():
+    '''Creates a usefull class and does something with it for
+    our module.'''
+    useful = UsefulClass()
+    print(useful)
+
+if __name__ = "__main__":
+    main()
+
+# Classes can be defined anywhere
+"""
+They are typically defined at the module level but they can also be 
+defined inside a function or method as shown below.
+"""
