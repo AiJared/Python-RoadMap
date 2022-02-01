@@ -216,3 +216,9 @@ del keyword removes the item with the specified key
 """
 del thisdict["model"]
 print(thisdict)
+
+"""
+The del keyword can also delete the entire dictionary
+del thisdict
+print(thisdict) will return an error because "thisdict" no longer exists
+"""
