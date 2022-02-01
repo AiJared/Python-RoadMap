@@ -204,3 +204,9 @@ The pop() removes the item with a specified key name
 """
 thisdict.pop("model")
 print(thisdict)
+
+"""
+popitem removes the last inserted item, (in versions before 3.7 used to remove a random item)
+"""
+thisdict.popitem()
+print(thisdict)
