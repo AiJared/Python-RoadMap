@@ -196,3 +196,11 @@ Example, update the year of the car using the update method
 """
 thisdict.update({"year": 2020})
 print(thisdict["year"])
+
+# Remove items from the dictionary
+"""
+There are several methods of removing items from a dictionay.
+The pop() removes the item with a specified key name
+"""
+thisdict.pop("model")
+print(thisdict)
