@@ -221,4 +221,7 @@ print(thisdict)
 The del keyword can also delete the entire dictionary
 del thisdict
 print(thisdict) will return an error because "thisdict" no longer exists
+clear() method empties the dictionary
+thidict.clear()
+print(thisdict) will return an empty dictionary
 """
