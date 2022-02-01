@@ -198,7 +198,7 @@ thisdict.update({"year": 2020})
 print(thisdict["year"])
 
 """
-popitem removes the last inserted item, (in versions before 3.7 used to remove a random item)
+del keyword removes the item with the specified key
 """
-thisdict.popitem()
+del thisdict["model"]
 print(thisdict)

@@ -210,3 +210,9 @@ popitem removes the last inserted item, (in versions before 3.7 used to remove a
 """
 thisdict.popitem()
 print(thisdict)
+
+"""
+del keyword removes the item with the specified key
+"""
+del thisdict["model"]
+print(thisdict)
