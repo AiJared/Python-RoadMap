@@ -57,20 +57,31 @@ print(student)
 
 # Nested Dictionaries
 """
-A dictionary can contain dictionaries as show in the programs below
+A dictionary can contain dictionaries as show in the programs below.
 """
-myFamily = {
-    "child1": {
-        "name": "Emil",
-        "year": 2004
-    },
-    "child2": {
-        "name": "Tobias",
-        "year": 2007 
-    },
-    "child3": {
-        "name": "Linus",
-        "year": 2011
-    }
+# We can aslo create dictionaries outside and create another big dictionary that will contain all of them
+child1 = {
+    "name": "Emil",
+    "year": 2004
 }
-print(myFamily)
+
+child2 = {
+    "name": "Tobias",
+    "year": 2007
+}
+
+child3 = {
+    "name": "Linus",
+    "year": 2011
+}
+
+myfamily = {
+    "child1": child1,
+    "child2": child2,
+    "child3": child3
+}
+
+print(child1)
+print(child2)
+print(child3)
+print(myfamily)
