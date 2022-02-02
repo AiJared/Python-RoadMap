@@ -65,7 +65,7 @@ print(type(thisdict))
 # Accessing items in a dictionary
 """
 Items in a dictionary can be accessed using the keys.
-They can also be accessed using the get() metho
+They can also be accessed using the get() method
 """
 x = thisdict["model"]
 print(x)
@@ -75,7 +75,7 @@ print(x)
 
 # Get keys
 """
-The keys method will get you a list alll the keys in the dictionaries
+The keys() method will get you a list alll the keys in the dictionaries
 """
 x = thisdict.keys()
 print(x)
