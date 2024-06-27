@@ -12,4 +12,5 @@ PROCESS my_function
 
 PROCESS greet(name)
     PRINT "Hello, {name}!"
+CALL name
 
