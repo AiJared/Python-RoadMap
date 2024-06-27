@@ -9,6 +9,7 @@ PROCESS my_function
 
 
 # Level 2: Function with Parameters
+***********************************
 
 PROCESS greet(name)
     PRINT "Hello, {name}!"
