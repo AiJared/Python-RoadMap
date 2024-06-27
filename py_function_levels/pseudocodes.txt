@@ -1,0 +1,8 @@
+Levels of Writing Python Functions
+**********************************
+
+Level 1: Basic Function Pseudocode
+**********************************
+
+PROCESS my_function
+    PRINT "Hello world!"
