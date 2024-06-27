@@ -1,0 +1,16 @@
+Levels of Writing Python Functions
+**********************************
+
+Level 1: Basic Function Pseudocode
+**********************************
+
+PROCESS my_function
+    PRINT "Hello world!"
+
+
+# Level 2: Function with Parameters
+
+PROCESS greet(name)
+    PRINT "Hello, {name}!"
+CALL name
+
