@@ -54,9 +54,9 @@ Level 7: Recursion
 
 PROCESS factorial(n)
 	IF n is 0
-	RETURN 1
+		RETURN 1
 	ELSE
-	RETURN n * factorial of n - 1
+		RETURN n * factorial of n - 1
 CALL factorial
 
 Level 8: Lambda Functions
@@ -64,3 +64,19 @@ Level 8: Lambda Functions
 
 double is LAMBDA x: x times 2
 result is double of 3
+
+Level 9: Function Decorators
+****************************
+
+PROCESS my_decorator(func)
+	PROCESS wrapper
+		PRINT "Something is happening before the function is called
+	CALL func
+		PRINT "Something is happening after the function is called
+	RETURN wrapper
+
+DECORATOR
+PROCESS say_hello
+	PRINT "Hello"
+CALL say_hello
+	
