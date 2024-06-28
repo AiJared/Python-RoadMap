@@ -64,6 +64,7 @@ Level 8: Lambda Functions
 
 double is LAMBDA x: x times 2
 result is double of 3
+PRINT result
 
 Level 9: Function Decorators
 ****************************
