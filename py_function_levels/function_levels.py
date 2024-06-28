@@ -1,6 +1,7 @@
 # Level 1: Basic Function
 def my_function():
     print("Hello, world!")
+my_function()
 
 # Level 2: Function with Parameters
 def greet(name):
