@@ -20,7 +20,8 @@ Level 3: Return Values
 
 PROCESS add(a, b)
     RETURN a + b
-CALL add
+result is add 2 and 3
+PRINT result
 
 Level 4: Default Parameters
 ***************************
