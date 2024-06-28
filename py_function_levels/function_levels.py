@@ -45,11 +45,13 @@ def factorial(n):
     else:
         return n * factorial(n-1)
     
-factorial(8)
+result = factorial(8)
+print(result)
 
 # Level 8: Lambda Functions
 double = lambda x: x * 2
 result = double(3)
+print(result)
 
 # Level 9: Function Decorators
 def my_decorator(func):

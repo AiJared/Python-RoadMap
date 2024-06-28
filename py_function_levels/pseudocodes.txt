@@ -57,7 +57,8 @@ PROCESS factorial(n)
 		RETURN 1
 	ELSE
 		RETURN n * factorial of n - 1
-CALL factorial
+result is factorial of 8
+PRINT result
 
 Level 8: Lambda Functions
 *************************
