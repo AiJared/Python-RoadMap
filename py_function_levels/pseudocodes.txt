@@ -71,7 +71,7 @@ Level 9: Function Decorators
 PROCESS my_decorator(func)
 	PROCESS wrapper
 		PRINT "Something is happening before the function is called
-	CALL func
+		CALL func
 		PRINT "Something is happening after the function is called
 	RETURN wrapper
 
@@ -79,4 +79,15 @@ DECORATOR
 PROCESS say_hello
 	PRINT "Hello"
 CALL say_hello
+
+Level 10: Advanced Functions
+****************************
+
+PROCESS apply(func, x)
+	RETURN func (x)
+
+PROCESS square(x)
+	RETURN x ** 2
+
+result is CALL apply on square and 5
 	
