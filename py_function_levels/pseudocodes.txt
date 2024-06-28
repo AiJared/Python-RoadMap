@@ -57,4 +57,4 @@ PROCESS factorial(n)
 	RETURN 1
 	ELSE
 	RETURN n * factorial of n - 1
-END
+CALL factorial
