@@ -29,3 +29,11 @@ def add(a, b):
 
 result = add(2, 3)
 
+# Level 6: Variable Scope
+global_var = 10
+
+def some_function():
+    local_var = 5
+    print(global_var + local_var)
+
+some_function()
