@@ -38,6 +38,7 @@ PROCESS add(a, b)
 	"""
 	RETURN a + b
 result is add 2 and 3
+PRINT result
 
 Level 6: Variable Scope
 *************************
