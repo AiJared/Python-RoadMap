@@ -6,14 +6,14 @@ Level 1: Basic Function Pseudocode
 
 PROCESS my_function
     PRINT "Hello world!"
-
+CALL my_function
 
 Level 2: Function with Parameters
 ***********************************
 
 PROCESS greet(name)
     PRINT "Hello, {name}!"
-CALL name
+CALL greet
 
 Level 3: Return Values
 **********************
