@@ -50,3 +50,17 @@ factorial(8)
 # Level 8: Lambda Functions
 double = lambda x: x * 2
 result = double(3)
+
+# Level 9: Function Decorators
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
