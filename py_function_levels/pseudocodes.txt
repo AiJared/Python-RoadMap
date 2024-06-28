@@ -26,5 +26,25 @@ Level 4: Default Parameters
 ***************************
 
 PROCESS greet(name="name")
-    PRINT ("Hello + name!")
+    PRINT "Hello + name!"
 CALL greet
+
+Level 5: Docstrings
+*******************
+
+PROCESS add(a, b)
+	"""
+	Docstring here
+	"""
+	RETURN a + b
+CALL add
+
+# Level 6: Variable Scope
+*************************
+
+GLOBAL variable
+
+PROCESS some_function()
+	LOCAL variable
+	PRINT GLOBAL + LOCAL
+CALL some_function
