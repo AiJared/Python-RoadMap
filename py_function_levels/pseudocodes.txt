@@ -37,7 +37,7 @@ PROCESS add(a, b)
 	Docstring here
 	"""
 	RETURN a + b
-CALL add
+result is add 2 and 3
 
 Level 6: Variable Scope
 *************************
