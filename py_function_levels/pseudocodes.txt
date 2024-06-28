@@ -79,7 +79,7 @@ PROCESS my_decorator(func)
 		PRINT "Something is happening after the function is called
 	RETURN wrapper
 
-DECORATOR
+DECORATOR my_decorator
 PROCESS say_hello
 	PRINT "Hello"
 CALL say_hello
