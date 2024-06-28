@@ -20,3 +20,12 @@ def greet(name="Guest"):
 
 greet()
 
+# Level 5: Docstrings
+def add(a, b):
+    """
+    This function adds two numbers
+    """
+    return a + b
+
+result = add(2, 3)
+
