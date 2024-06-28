@@ -64,3 +64,13 @@ def say_hello():
     print("Hello!")
 
 say_hello()
+
+# Level 10: Advanced Functions
+def apply(func, x):
+    return func(x)
+
+def square(x):
+    return x ** 2
+
+result = apply(square, 5)
+print(result)
