@@ -8,3 +8,8 @@ def greet(name):
 
 greet("Alice")
 
+# Level 3: Return Values
+def add(a, b):
+    return a + b
+
+result = add(2, 3)
