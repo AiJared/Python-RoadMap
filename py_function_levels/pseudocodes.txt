@@ -48,3 +48,13 @@ PROCESS some_function()
 	LOCAL variable
 	PRINT GLOBAL + LOCAL
 CALL some_function
+
+# Level 7: Recursion
+********************
+
+PROCESS factorial(n)
+	IF n is 0
+	RETURN 1
+	ELSE
+	RETURN n * factorial of n - 1
+END
