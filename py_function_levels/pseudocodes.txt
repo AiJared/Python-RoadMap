@@ -19,5 +19,13 @@ Level 3: Return Values
 **********************
 
 PROCESS add(a, b)
-    return a + b
+    RETURN a + b
 CALL add
+
+Level 4: Default Parameters
+***************************
+
+PROCESS greet(name="name")
+    PRINT ("Hello + name!")
+CALL greet
+
