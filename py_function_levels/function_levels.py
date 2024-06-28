@@ -37,3 +37,12 @@ def some_function():
     print(global_var + local_var)
 
 some_function()
+
+# Level 7: Recursion
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
+factorial(8)
