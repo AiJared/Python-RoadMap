@@ -39,7 +39,7 @@ PROCESS add(a, b)
 	RETURN a + b
 CALL add
 
-# Level 6: Variable Scope
+Level 6: Variable Scope
 *************************
 
 GLOBAL variable
@@ -49,7 +49,7 @@ PROCESS some_function()
 	PRINT GLOBAL + LOCAL
 CALL some_function
 
-# Level 7: Recursion
+Level 7: Recursion
 ********************
 
 PROCESS factorial(n)
@@ -58,3 +58,9 @@ PROCESS factorial(n)
 	ELSE
 	RETURN n * factorial of n - 1
 CALL factorial
+
+Level 8: Lambda Functions
+*************************
+
+double is LAMBDA x: x times 2
+result is double of 3
