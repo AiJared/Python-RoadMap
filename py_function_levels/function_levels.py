@@ -46,3 +46,7 @@ def factorial(n):
         return n * factorial(n-1)
     
 factorial(8)
+
+# Level 8: Lambda Functions
+double = lambda x: x * 2
+result = double(3)
