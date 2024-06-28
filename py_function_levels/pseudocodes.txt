@@ -90,4 +90,5 @@ PROCESS square(x)
 	RETURN x ** 2
 
 result is CALL apply on square and 5
+PRINT result
 	
