@@ -42,10 +42,10 @@ CALL add
 Level 6: Variable Scope
 *************************
 
-GLOBAL variable
+GLOBAL is 10
 
 PROCESS some_function()
-	LOCAL variable
+	LOCAL is 5
 	PRINT GLOBAL + LOCAL
 CALL some_function
 
