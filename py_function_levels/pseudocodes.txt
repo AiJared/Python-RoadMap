@@ -8,10 +8,16 @@ PROCESS my_function
     PRINT "Hello world!"
 
 
-# Level 2: Function with Parameters
+Level 2: Function with Parameters
 ***********************************
 
 PROCESS greet(name)
     PRINT "Hello, {name}!"
 CALL name
 
+Level 3: Return Values
+**********************
+
+PROCESS add(a, b)
+    return a + b
+CALL add
