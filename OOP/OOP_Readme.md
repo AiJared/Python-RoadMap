@@ -21,3 +21,6 @@ Software needs to be able to evolve over time in response to changing conditions
 3. **Reusability**
 
 Software should be reusable, that is, the same code should be usable as a component of different systems in various applications. Developing quality software can be an expesive enterprise and its cost can be offset somewhat if the software is designed in a way that makes it easily reusable in future applications.
+
+### Object-Oriented Design Principles
+
