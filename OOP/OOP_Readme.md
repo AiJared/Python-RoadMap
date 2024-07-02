@@ -12,3 +12,5 @@ Software implementations should achieve **robustness**, **adaptability** and **r
 
 1. **Robustness**
 
+This is the ability of software to handle unexpected inputs that are not explicitly defined for its application. For example, if a program is expecting a positive integer(perhaps representing the price of an item) and instead it is given a negative integer, then the program should be able to revocer gracefully from this error.
+
