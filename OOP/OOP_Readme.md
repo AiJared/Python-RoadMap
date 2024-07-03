@@ -34,4 +34,4 @@ Below are the object-oriented design principles which intend ti facilitate the g
 
 Modularity refers to an organizing principle in which different components of a software system are divided into separate functional units.
 
-Using modularity in software system can alsi provide a powerful organizing framework that brings clarity to an implementation.
+Using modularity in software system can alsi provide a powerful organizing framework that brings clarity to an implementation. In Python a module is a collection of closely related functions and classes that are defined together in a single file of source code.
