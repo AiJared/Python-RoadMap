@@ -43,3 +43,5 @@ The use of modularity helps support the object-oriented design goals. **Robustne
 The idea behind abstractio is to break a complicated system down to its most fundamental parts. Consequently, describing the parts of a system involves naming them and explaining thier functionality. The application of abstraction paradigm to the design on data structures gives the rise of **abstract data types** (ADTs). 
 
 An ADT is a mathematical model of data structure that specifies the type of data stored, the operations supported on them and the types of parameters of the operations. An ADT specifies **what** each operation does but not **how** it does it. Here, we will typically refer to the collective set of behaviors supported by an ADT as its **public interface**
+
+Python has a tradition of handling abstraction implicitly using a mechanism known as **duck typing** As an interpreted and dynamically typed language, there is no **compile time** checking of data types in Python, and no formal requirement for declarations of abstract base classes.
