@@ -24,3 +24,8 @@ Software should be reusable, that is, the same code should be usable as a compon
 
 ### Object-Oriented Design Principles
 
+Below are the object-oriented design principles which intend ti facilitate the goals outlines above.
+
+- Modularity
+- Abstraction
+- Encapsulation
