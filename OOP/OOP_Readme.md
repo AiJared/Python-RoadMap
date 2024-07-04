@@ -78,4 +78,4 @@ In object-oriented programming, the design step is the most important phase in t
 
 Defining the classes, together with their instance variables and methods, are the key to the design on an object-oriented program.
 
-One of the tools for developing an initial high-level design for a project is the use of **CRC cards**.
+One of the tools for developing an initial high-level design for a project is the use of **CRC cards**. Class-Responsibility-Collaborator (CRC) cards are simple index cards that subdivide the work required of a program. The main idea behind this is to have each card represent a component, which will ultimately become a class in the program.
