@@ -72,3 +72,4 @@ In object-oriented programming, the design step is the most important phase in t
 
 - **Responsibilities**: Divide the work into different **actors**, each with a different responsiblity. Try to describe responsibilities using action verbs. These actions will form the classes for the program.
 
+- **Independence**: Define the work for each class to be independent from other classes as possible. Subdivide responsibilities between classes so that each class has **autonomy** over some aspect of the program. Give data (as in stance variables) to the class that has jurisdiction over the actions that require access to this data.
