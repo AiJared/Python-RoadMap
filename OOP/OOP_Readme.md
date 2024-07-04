@@ -68,4 +68,7 @@ Traditional software development involves several phases. Three major steps are:
 
 ### 1. Design
 
-In object-oriented programming, the design step is the most important phase in the process of developing software. It is at this phase that we decide how to divide the workings of our program into **classes**, how these classes will **interact**, what data each will **store** and what **actions** each will perform.
+In object-oriented programming, the design step is the most important phase in the process of developing software. It is at this phase that we decide how to divide the workings of our program into **classes**, how these classes will **interact**, what data each will **store** and what **actions** each will perform. There are some rules that can be applied when determining how to design classes:
+
+- **Responsibilities**: Divide the work into different **actors**, each with a different responsiblity. Try to describe responsibilities using action verbs. These actions will form the classes for the program.
+
