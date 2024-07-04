@@ -57,3 +57,12 @@ By convention, names of members of a class (both data members and member functio
 Computing researchers and practitioners have developed a variety of organizational concepts and methodologies for designing quality object-oriented software that is concise, correct and reusable. There is the concept of **desgin pattern**, which describes s solution to a typical software design problem. A pattern provides a general template for a solution that can be applied in many different situations. It describes the main elements of a solution in an abstract way that can be specialized for a specific problem at hand. It consists of a **name** which identifies the patter, a **contenxt** which describes the scenarios for which this pattern can be applied, a **template** which describes how the pattern is applied and a **result** which describes and analyzes what the pattern produces.
 
 The design patterns fall into two groups; patterns for solving *algorithm design problems* and patterns for solving *software engineering problems*
+
+## Software Development
+
+Traditional software development involves several phases. Three major steps are:
+
+1. Design
+2. Implementation
+3. Testing and debugging
+
