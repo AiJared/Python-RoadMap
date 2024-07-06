@@ -92,4 +92,4 @@ A class is the primary means for **abstraction** in oop. I Python, every piece o
 
 Based on the design described above, we are going to implement in a program (Python class) for credit card. The instances defined by the CreditCard class provide a simple model for traditional credit cards. They have identifying information about the **customer**, **bank**, **account number**, **credit limit**, and **current balance**. The class restricts charges that would cause a card's balance to go over its spending limit, but it does not charge **interest** or **late payments**.
 
-The construct begins with the keyword **class**, followed by the **name** of the class, a **colon** and then an **indented block of code** of the class.
+The construct begins with the keyword **class**, followed by the **name** of the class, a **colon** and then an **indented block of code** of the class. The body includes definitions for all methods of the class. These methods are defined as **functions** yet with special parameters named **self**, that serves to identify the particular instance upon which a member is invoked.
