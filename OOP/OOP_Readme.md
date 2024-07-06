@@ -90,4 +90,4 @@ A class is the primary means for **abstraction** in oop. I Python, every piece o
 
 ## Example: CreditCard Class
 
-Based on the design described above, we are going to implement in a program (Python class) for credit card.
+Based on the design described above, we are going to implement in a program (Python class) for credit card. The instances defined by the CreditCard class provide a simple model for traditional credit cards. They have identifying information about the **customer**, **bank**, **account number**, **credit limit**, and **current balance**.
