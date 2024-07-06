@@ -89,3 +89,5 @@ As the design takes form, a standard approach to explain and document the design
 A class is the primary means for **abstraction** in oop. I Python, every piece of data is representef ad an instance of some class. A class provides a set of behaviors in the form of **member functions** also know an **methods**, with implementations that are common to all instances of that class. A class also serves as a **blueprint** for each instance is represented in the form of **attributes** (also known as **fields**, **instance variables** or **data members**).
 
 ## Example: CreditCard Class
+
+Based on the design described above, we are going to implement in a program (Python class) for credit card.
