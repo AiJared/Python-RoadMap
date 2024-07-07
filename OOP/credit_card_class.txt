@@ -16,3 +16,9 @@ CLASS CreditCard
 		SET self's _account to acnt
 		SET self's _limit to limit
 		SET self's _balance to zero
+
+	PROCESS get_customer with self
+		"""Return customer name"""
+		RETURN self's customer
+
+	PROCESS get_bank with self
