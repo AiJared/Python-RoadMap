@@ -25,3 +25,8 @@ class CreditCard:
         """
         return self._customer
     
+    def get_bank(self):
+        """
+        Return the bank's name
+        """
+        return self._bank
