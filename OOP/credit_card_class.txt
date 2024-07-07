@@ -32,3 +32,7 @@ CLASS CreditCard
 	PROCESS get_limit with self
 		"""Return current credit limit"""
 		RETURN self's _limit
+
+	PROCESS get_balance with self
+		"""Return current balance."""
+		RETURN self's _balance
