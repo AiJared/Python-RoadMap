@@ -1,0 +1,18 @@
+CLASS CreditCard
+	"""A consumer credit card."""
+	
+	PROCESS INIT with self, customer, bank, acnt and limit
+		"""Create a new credit card instance.
+
+		The initial balance is zero
+		customer is the name of the customer
+		bank is the name of the bank
+		acnt is the account identifier
+		limit is the credit limit
+		"""
+
+		SET self's _customer to customer
+		SET self's _bank to bank
+		SET self's _account to acnt
+		SET self's _limit to limit
+		SET self's _balance to zero
