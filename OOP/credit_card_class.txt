@@ -47,3 +47,7 @@ CLASS CreditCard
 		ELSE
 			increase self's _balance by price
 			RETURN True
+
+	PROCESS make_payment with self and amount
+		""Process customer payment that reduces balance."""
+		decrease self's balance by amount
