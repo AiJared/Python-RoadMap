@@ -43,3 +43,9 @@ class CreditCard:
         """
         return self._limit
     
+    def get_balance(self):
+        """
+        Return current balance.
+        """
+        return self._balance
+    
