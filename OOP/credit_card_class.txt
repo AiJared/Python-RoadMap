@@ -19,6 +19,8 @@ CLASS CreditCard
 
 	PROCESS get_customer with self
 		"""Return customer name"""
-		RETURN self's customer
+		RETURN self's _customer
 
 	PROCESS get_bank with self
+		"""Return the bank's name"""
+		RETURN self's _bank
