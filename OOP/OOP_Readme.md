@@ -97,3 +97,5 @@ The construct begins with the keyword **class**, followed by the **name** of the
 ### The self Identifier
 
 In a Python class, the **self** identifier plays a very important role. In the context of the CreditCard class, there can presumably be many different **instances**, and each must maintain its own **balance**, its own **credit limit** and so on. Therefore, each instance stores its own instance variables to reflect its current state.
+
+Syntactically, self identifies the instance upon which a method is invoked. For example, assume that a user of our class has a variable, **my_card**; that identifies an instance of the CreditCard class. When the user calls **my_card.get_balance()**, identifier **self**, within the definition of the get_balance method, refers to the card known as my_card by the caller. The expression **self._balance** refers to an instance variable, named **_balance**, stored as part of that particular credit card's state.
