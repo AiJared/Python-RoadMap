@@ -100,4 +100,6 @@ In a Python class, the **self** identifier plays a very important role. In the c
 
 Syntactically, self identifies the instance upon which a method is invoked. For example, assume that a user of our class has a variable, **my_card**; that identifies an instance of the CreditCard class. When the user calls **my_card.get_balance()**, identifier **self**, within the definition of the get_balance method, refers to the card known as my_card by the caller. The expression **self._balance** refers to an instance variable, named **_balance**, stored as part of that particular credit card's state.
 
-Check the pseudocode for the credit card class in the file credit_card_class.txt
+Check the pseudocode for the credit card class in the file **credit_card_class.txt**.
+
+Then check the actual in the file **credit_card_class.py**.
