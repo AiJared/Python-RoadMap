@@ -24,3 +24,7 @@ CLASS CreditCard
 	PROCESS get_bank with self
 		"""Return the bank's name"""
 		RETURN self's _bank
+
+	PROCESS get_account with self
+		"""Return the card identifying number (typically stored as a string).***
+		RETURN self's _account
