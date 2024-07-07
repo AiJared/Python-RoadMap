@@ -28,3 +28,7 @@ CLASS CreditCard
 	PROCESS get_account with self
 		"""Return the card identifying number (typically stored as a string).***
 		RETURN self's _account
+
+	PROCESS get_limit with self
+		"""Return current credit limit"""
+		RETURN self's _limit
