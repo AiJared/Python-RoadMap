@@ -36,3 +36,14 @@ CLASS CreditCard
 	PROCESS get_balance with self
 		"""Return current balance."""
 		RETURN self's _balance
+
+	PROCESS charge with self and price
+		"""Charge given price to the card, assuming sufficient credit
+		limit.
+		Return True if charge was processed; False if charge was denied.
+		"""
+		IF price + self's _balance > self's _limit
+			RETURN False
+		ELSE
+			increase self's _balance by price
+			RETURN True
