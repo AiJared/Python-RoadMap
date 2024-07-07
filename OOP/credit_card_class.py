@@ -30,3 +30,16 @@ class CreditCard:
         Return the bank's name
         """
         return self._bank
+    
+    def get_account(self):
+        """
+        Return the card identifying number (typically stored as a string)
+        """
+        return self._account
+    
+    def get_limit(self):
+        """
+        Return current credit limit.
+        """
+        return self._limit
+    
