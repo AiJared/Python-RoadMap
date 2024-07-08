@@ -117,3 +117,5 @@ Internally this results in a call to the specifically named **__init__** method 
 ### Encapsulation
 
 By convention, a single leading underscore in the name of a data member, such as **_balance** implies that it is intended as **nonpublic**. Users of a class should not dirrectly access such members.
+
+As a general rule, we will treat all data members as nonpublic. This allows us to better enforce a consistent state for all instances. We can provide accessors, such as get_balance, to provide a user of our class **read-only** access to a trait. If we wish to allow the user to change the state, we can provide appropriate update methods. In the context of data structures, encapsulating the internal representation allows us greater flexibility to redesign the way a class works, perhaps to improve the efficiency of the structure.
