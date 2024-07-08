@@ -123,3 +123,7 @@ As a general rule, we will treat all data members as nonpublic. This allows us t
 ### Additional Methods
 
 The most interesting behaviors in our class are **charge** and **make_payment**. The charge function typically adds the given price to the credit card balance, to reflect a purchase of said price by the customer. However, before accepting the charge, our implementation verifies that the new purchase would not cause the balance to exceed the credit limit. The **make_payment** charge reflects the customer sending payment to the bank for the given amount, thereby reducing the balance on the card. We note that in the command, *self._balance -= amount*, the expression self._balance is qualified with the self identifier because it represents an instance variable of the card, while the unqualified amount represents the local parameter.
+
+### Error Checking
+
+The CreditCard implementation is not particularly robust. First, we note that we did not explicitly check the types of the parameters to charge and make_payment, nor any of the parameters to the constructor. If a user were to make a call such as **visa.charge('candy')**, our code would presumably crash when attempting to add that parameter to the current balance. If this class were to be widely used in a library, we moght use more rigorous techniques to raise **TypeError** when facing such misuse.
