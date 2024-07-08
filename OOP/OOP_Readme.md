@@ -127,3 +127,5 @@ The most interesting behaviors in our class are **charge** and **make_payment**.
 ### Error Checking
 
 The CreditCard implementation is not particularly robust. First, we note that we did not explicitly check the types of the parameters to charge and make_payment, nor any of the parameters to the constructor. If a user were to make a call such as **visa.charge('candy')**, our code would presumably crash when attempting to add that parameter to the current balance. If this class were to be widely used in a library, we moght use more rigorous techniques to raise **TypeError** when facing such misuse.
+
+Apart from the type errors, the implementation may be susceptible to logical errors. For example, if a user were allowed to charge a negative price, such as **visa.charge(-300)**, that would serve to **lower** the customer's balance. This provides a loophole for lowering a balance without making a payment. Of course, this might be considered valid usage if modeling the credit received when a customer returns merchanise to a store.
