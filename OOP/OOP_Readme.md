@@ -105,3 +105,10 @@ Check the pseudocode for the credit card class in the file **credit_card_class.t
 Then check the actual in the file **credit_card_class.py**.
 
 We draw attention to the difference between the method signature as declared within the class versus that used by a caller. For example, from a user's perspective we have seen that the **get_balance** method takes zero parameters, yet within the class definition, **self** is an explicit parameter. Likewise, the charge method is declared within the class having two parameters (self and price), even though this method is called with one parameter, for example, as my_card.charge(200). The interpretter automatically binds the instance upon which the method is invoked to the self paramter. 
+
+### The Constructor
+
+A user can create an instance of the CreditCard class using a syntx as: 
+
+*cc = CreditCard('Jared Otieno', 'Co-operative bank', '5522 4433 6611 7788', 100)*
+
