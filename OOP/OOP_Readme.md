@@ -112,3 +112,4 @@ A user can create an instance of the CreditCard class using a syntx as:
 
 *cc = CreditCard('Jared Otieno', 'Co-operative bank', '5522 4433 6611 7788', 100)*
 
+Internally this results in a call to the specifically named **__init__** method that serves as the **constructor** of the class.
