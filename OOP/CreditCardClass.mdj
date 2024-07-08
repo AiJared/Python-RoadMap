@@ -1,7 +1,7 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Untitled",
+	"name": "Credit_Card_class",
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
@@ -546,5 +546,6 @@
 				}
 			]
 		}
-	]
+	],
+	"author": "Jared"
 }
