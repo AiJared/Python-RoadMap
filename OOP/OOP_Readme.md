@@ -133,3 +133,4 @@ Apart from the type errors, the implementation may be susceptible to logical err
 ### Testing the Class
 
 These tests are enclosed within a condition, **if __name__ == '__main__'**, so that they can be embedded in the source code with class definition.
+These tests provide **method coverage**, as each of the methods is called at least once, but it does not provide **statement converage**, as there is never a case in which a charge is rejected due to te credit limit.
