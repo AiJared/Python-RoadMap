@@ -67,3 +67,16 @@ class CreditCard:
         self._balance -= amount
 
 # Testing the class
+if __name__ == '__main__':
+    wallet = []
+    wallet.append(CreditCard('Jared Otieno', "Co-operative Bank",
+                             "2345 1234 4567 5678", 25000))
+    wallet.append(CreditCard('Jared Otieno', "Equity Bank",
+                             "2312 3423 4534 5645", 50000))
+    wallet.append(CreditCard("Jared Otieno", "KCB Bank",
+                             '5678 2345 5678', 1000000))
+
+    for val in range(1, 17):
+        wallet[0].charge(val)
+        wallet[1].charge(2*val)
+        wallet[2].charge(3*val) 
