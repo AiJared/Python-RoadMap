@@ -65,3 +65,5 @@ class CreditCard:
         Process customer payment that reduces balance.
         """
         self._balance -= amount
+
+# Testing the class
