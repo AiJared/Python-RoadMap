@@ -80,3 +80,11 @@ if __name__ == '__main__':
         wallet[0].charge(val)
         wallet[1].charge(2*val)
         wallet[2].charge(3*val) 
+
+    for c in range(3):
+        print("Customer =", wallet[c].get_customer())
+        print("Bank =", wallet[c].get_bank())
+        print("Account =", wallet[c].get_account())
+        print("Limit =", wallet[c].get_limit())
+        print("Balance =", wallet[c].get_balance())
+        
