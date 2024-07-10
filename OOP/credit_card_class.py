@@ -60,7 +60,7 @@ class CreditCard:
             self._balance += price
             return True
     
-    def make_payments(self, amount):
+    def make_payment(self, amount):
         """
         Process customer payment that reduces balance.
         """
