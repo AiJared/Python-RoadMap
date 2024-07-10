@@ -87,4 +87,8 @@ if __name__ == '__main__':
         print("Account =", wallet[c].get_account())
         print("Limit =", wallet[c].get_limit())
         print("Balance =", wallet[c].get_balance())
-        
+
+        while wallet[c].get_balance() > 100:
+            wallet[c].make_payment(100)
+            print("New balance =", wallet[c].get_balance())
+        print()
