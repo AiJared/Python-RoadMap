@@ -138,3 +138,5 @@ These tests provide **method coverage**, as each of the methods is called at lea
 ### Operator Overloading and Python's Special Methods
 
 Python's built-in classes provide natural semantics for many operators. For example, the syntax a + b invokes **addition** for numeric types, yet **concatenation** for sequence types. When defining a new class, we must consider whether a syntax like a + b should be defined when a or b is an instance of that class.
+
+By default, the + operator is undefined for a new class. However, the author of a class may provide a definition using a technique known as **operator overloading**. This is done by implementing a specially named method. In particular, the + operator is overloaded by implementing a method named **__add__**, which takes the right-hand operand as a parameter and which returns the result of the expression. That is, the sytanx, a + b, is converted to a method call on object of the form, **a__add__(b)**. Similar specially named methods exist for other operators.
