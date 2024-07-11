@@ -134,3 +134,7 @@ Apart from the type errors, the implementation may be susceptible to logical err
 
 These tests are enclosed within a condition, **if __name__ == '__main__'**, so that they can be embedded in the source code with class definition.
 These tests provide **method coverage**, as each of the methods is called at least once, but it does not provide **statement converage**, as there is never a case in which a charge is rejected due to te credit limit. This is not a particularly advances form of testing as the output of the given tests must be manually audited in order to determine whether the class behaved as expected. Python has tools for formal testing so that resulting values can be automatically compared to the predicted outcomes, with output generated only when an error is detected.
+
+### Operator Overloading and Python's Special Methods
+
+Python's built-in classes provide natural semantics for many operators. For example, the syntax a + b invokes **addition** for numeric types, yet **concatenation** for sequence types. When defining a new class, we must consider whether a syntax like a + b should be defined when a or b is an instance of that class.
