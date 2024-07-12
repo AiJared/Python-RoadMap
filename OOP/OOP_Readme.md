@@ -159,4 +159,4 @@ There are some operators that have default definitions provided by Python, in th
 
 If a container class provides implementations for both __len__ and __getitem__, a default iteration is provided automatically. Furthermore, once an iterator is defined, default functionality of __contains__ is provided.
 
-The expression *a is b* evaluates whether the identifiers a and b are **aliases** for the same object. The expression a == b is testing a notion of whether the two identifiers reference **equivalent** values. 
+The expression *a is b* evaluates whether the identifiers a and b are **aliases** for the same object. The expression a == b is testing a notion of whether the two identifiers reference **equivalent** values. The notion of **equivalence** depends upon the context of the class, and semantics is defined with the __eq__ method. However, if no implmentation is given for __eq__, the syntax a == b is legal with semantics of a is b, that is, an instance is equivalent to itself and no others. 
