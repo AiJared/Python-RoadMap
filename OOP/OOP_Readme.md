@@ -150,3 +150,7 @@ In addition to traditional operator overloading, Python relies on specially name
 Similar special methods are used to determine how to construct an **int**, **float** or **bool** based on a parameter from a user-defined class. The conversion to a Boolean value is particularly importance because the syntax, **if foo:,** can be used even when foo is not formally a Boolean value. For a user-defined class, that condition is evaluated by the special method **foo.__bool__()**.
 
 Several other top-level functions rely on calling specially named methods. For example, the standard way to determine the size of a container type is by calling the top-level len function. Note well that the calling syntax, **len(foo)** is not the traditional method-calling syntax with the dot operator. However, in the case of a user-defined class, the top-level len function relies on a call to a specially named __len__ method of that class. That is, the call len(foo) is evaluated through a method call, foo.__len__(). When developing data structures, we will routinely define the __len__ method to return a measure of the size of the structure.
+
+#### Implied Methods
+
+If a particular special method is not implemented in a user-defined class, the standard syntax that relies upon that method will raise an **exception**. For example, evaluating the expression, a + b, for instances of a user-defined class without __add__ or __radd__ will raise an error.
