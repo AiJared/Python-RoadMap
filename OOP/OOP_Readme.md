@@ -154,3 +154,5 @@ Several other top-level functions rely on calling specially named methods. For e
 #### Implied Methods
 
 If a particular special method is not implemented in a user-defined class, the standard syntax that relies upon that method will raise an **exception**. For example, evaluating the expression, a + b, for instances of a user-defined class without __add__ or __radd__ will raise an error.
+
+There are some operators that have default definitions provided by Python, in the absence of special methods and there are some operators whose definitions are derived from others. For example, the __bool__ method, which supports the syntax **if foo:,** has default semantics so that every object other than None is evaluated as True. However, for container types, the __len__ method is typically defined to return the size of the container. If such a method exists, then the evaluation of bool(foo) is interpreted by default to be True for instances with nonzero length, and False for instances with zero length, allowing a syntax such as **if waitlist:** to be used to test whether there are one more entries in the waitlist.
