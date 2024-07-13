@@ -7,4 +7,8 @@ CLASS Vector
 
 	PROCESS __len__ with self
 		"""Return the dimension of the vector."
-		RETURN  len of self._coords
+		RETURN  len of self's_coords
+
+	PROCESS __getitem__ with self and j
+		"""Return jth coordinate of vector"""
+		RETURN self's __coords[j]
