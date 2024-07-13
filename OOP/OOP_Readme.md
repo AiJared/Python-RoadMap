@@ -186,3 +186,5 @@ total = 0
 for entry in v: # implicit iteration via __len__ and __getitem__
 
     total += entry
+
+We implement many of the behaviors by trivially invoking a similar behavior on the underlying list of coordinates. However, our implementation of __add__ is customized. Assuming the two operands are vectors with the same length, this method creates a new vector and sets the coordinates of the new vector to be equal to the respective sum of the operands' elements.
