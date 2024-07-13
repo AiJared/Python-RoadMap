@@ -188,3 +188,5 @@ for entry in v: # implicit iteration via __len__ and __getitem__
     total += entry
 
 We implement many of the behaviors by trivially invoking a similar behavior on the underlying list of coordinates. However, our implementation of __add__ is customized. Assuming the two operands are vectors with the same length, this method creates a new vector and sets the coordinates of the new vector to be equal to the respective sum of the operands' elements.
+
+It is important to note that the class definition automatically supports the syntax u = v + [5, 3, 10, -2, 1], resulting in a new vecotr that is **element-by-element** "sum" of the first vector and the list instance. This is a result of Python's **Polymorphism**.
