@@ -44,3 +44,8 @@ class Vector:
         """
         return self._coords == other._coords
     
+    def __ne__(self, other):
+        """
+        Return True if vector differs from other.
+        """
+        return not self == other

@@ -31,7 +31,7 @@ CLASS Vector
 		RETURN self's _cords equals other's _cords
 
 	PROCESS __ne__ with self and other
-		"""Return True of vector differs from other.""
+		"""Return True if vector differs from other.""
 		RETURN not self equals other # relies on existing __eq__ definition
 
 	PROCESS __str__ with self
