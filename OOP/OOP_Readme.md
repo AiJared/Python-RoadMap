@@ -162,3 +162,7 @@ If a container class provides implementations for both __len__ and __getitem__, 
 The expression *a is b* evaluates whether the identifiers a and b are **aliases** for the same object. The expression a == b is testing a notion of whether the two identifiers reference **equivalent** values. The notion of **equivalence** depends upon the context of the class, and semantics is defined with the __eq__ method. However, if no implmentation is given for __eq__, the syntax a == b is legal with semantics of a is b, that is, an instance is equivalent to itself and no others. 
 
 You should be aware that some natural implications are not automatically provided by Python. For example, the __eq__ method supports syntax a == b, but providing that method does not affect the evaluation of syntax a != b. The __ne__ method should be provided, typically returning **not(a == b)** as a result. Similarly providing a __lt__ method supports syntax a < b and indirectly b > a, but providing both __lt__ and __eq__ does not imply semantics for a == b.
+
+**Example: Multidimensional Vector Class**
+
+To demonstrate the use of *operator overloading* via *special methods*, let's look at an implementation of a **Vector class** representing the coordinates of a vector in a **multideimentional space**.
