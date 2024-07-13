@@ -4,3 +4,7 @@ CLASS Vector
 	PROCESS __init__ with self and d
 		""Create d-dimensional vector of zeros."""
 		self._coords is [0]*d 
+
+	PROCESS __len__ with self
+		"""Return the dimension of the vector."
+		RETURN  len of self._coords
