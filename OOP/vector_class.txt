@@ -25,3 +25,7 @@ CLASS Vector
 		FOR j in the range of the len of self
 			SET  result[j] to self[j] plus other[j]
 		RETURN result
+
+	PROCESS __eq__ with self and other
+		"""Return True if vector has same coordinates as others.""
+		RETURN self's _cords equals other's _coords
