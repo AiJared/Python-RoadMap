@@ -28,4 +28,10 @@ CLASS Vector
 
 	PROCESS __eq__ with self and other
 		"""Return True if vector has same coordinates as others.""
-		RETURN self's _cords equals other's _coords
+		RETURN self's _cords equals other's _cords
+
+	PROCESS __ne__ with self and other
+		"""Return True of vector differs from other.""
+		RETURN not self equals other # relies on existing __eq__ definition
+
+	PROCESS __str__ with self
