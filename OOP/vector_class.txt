@@ -3,7 +3,7 @@ CLASS Vector
 
 	PROCESS __init__ with self and d
 		""Create d-dimensional vector of zeros."""
-		self._coords is [0]*d 
+		SET self._coords to [0]*d 
 
 	PROCESS __len__ with self
 		"""Return the dimension of the vector."
@@ -12,3 +12,8 @@ CLASS Vector
 	PROCESS __getitem__ with self and j
 		"""Return jth coordinate of vector"""
 		RETURN self's __coords[j]
+
+	PROCESS __setitem__ with self, j and val
+		"""Set jth coordinate of vector to given value."""
+		SET self's _coords[j] to val
+		
