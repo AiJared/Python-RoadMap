@@ -26,4 +26,14 @@ class Vector:
         """
         self._coords[j] = val
 
-    
+    def __add__(self, other):
+        """
+        Return sum of two vectors.
+        """
+        if len(self) != len(other):
+            raise ValueError('dimensions must agree!')
+        result = Vector(len(self))
+        for j in range(len(self)):
+            result[j] = self[j] + other[j]
+        
+        return result
