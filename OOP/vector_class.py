@@ -37,3 +37,10 @@ class Vector:
             result[j] = self[j] + other[j]
         
         return result
+    
+    def __eq__(self, other):
+        """
+        Return True if vector has same coordinates as others.
+        """
+        return self._coords == other._coords
+    
