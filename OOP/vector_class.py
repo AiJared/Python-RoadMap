@@ -8,4 +8,10 @@ class Vector:
         """
         self._coords = [0] * d
 
+    def __len__(self):
+        """
+        Return the dimension of the vector.
+        """
+        return self._coords
+    
     
