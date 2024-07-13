@@ -35,3 +35,5 @@ CLASS Vector
 		RETURN not self equals other # relies on existing __eq__ definition
 
 	PROCESS __str__ with self
+		"""Produce string representation of vector."""
+		RETURN '<' + str of self's _coords[1:-1] + '>'
