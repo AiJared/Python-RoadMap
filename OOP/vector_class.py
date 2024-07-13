@@ -48,4 +48,11 @@ class Vector:
         """
         Return True if vector differs from other.
         """
-        return not self == other # relies on existing __eq_
+        return not self == other # relies on existing __eq__
+    
+    def __str__(self):
+        """
+        Produce string representation of vector.
+        """
+        return '<' + str(self._coords)[1:-1] + '>'
+    
