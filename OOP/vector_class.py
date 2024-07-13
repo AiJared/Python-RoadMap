@@ -48,4 +48,4 @@ class Vector:
         """
         Return True if vector differs from other.
         """
-        return not self == other
+        return not self == other # relies on existing __eq_
