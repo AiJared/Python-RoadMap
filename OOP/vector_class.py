@@ -20,4 +20,10 @@ class Vector:
         """
         return self._coords[j]
     
+    def __setitem__(self, j, val):
+        """
+        Set jth coordinate of vector to given value.
+        """
+        self._coords[j] = val
+
     
