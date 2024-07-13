@@ -16,4 +16,12 @@ CLASS Vector
 	PROCESS __setitem__ with self, j and val
 		"""Set jth coordinate of vector to given value."""
 		SET self's _coords[j] to val
-		
+	
+	PROCESS __add__ with self and other
+		"""Return sum of two vectors.""
+		IF len of self is not equal to len of other
+			RAISE ValueError('dimensions must agree')
+			SET result to Vector's len of self
+		FOR j in the range of the len of self
+			SET  result[j] to self[j] plus other[j]
+		RETURN result
