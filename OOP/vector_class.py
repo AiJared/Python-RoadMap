@@ -14,4 +14,10 @@ class Vector:
         """
         return self._coords
     
+    def __getitem__(self, j):
+        """
+        Return the jth coordinate of vector.
+        """
+        return self._coords[j]
+    
     
