@@ -8,3 +8,12 @@ CLASS SequenceIterator
 
 	PROCESS __next__ with self
 		"""Return the next element or else raise StopIteration error"""
+		INCREMENT self._k by 1 # advance to the next index
+		IF self._k is less than len of self._seq
+			RETURN self._seq[self._k] # return the data element
+		ELSE
+			RAISE StopIteration # there are no elements
+
+	PROCESS __iter__ with self
+		"""By convention, an iterator must return itself as an iterator"""
+		RETURN self
