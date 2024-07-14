@@ -20,4 +20,9 @@ class SequenceIterator:
         else:
             raise StopIteration()
         
+    def __iter__(self):
+        """
+        By convention, an iterator must return itself as an iterator.
+        """
+        return self
     
