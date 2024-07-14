@@ -195,3 +195,4 @@ It is important to note that the class definition automatically supports the syn
 
 Iteration is an important concept in the design of data structures. an **iterator** for a collection provides one key behavior: It upports a special method named **__next__** that returns the next element of the collection if any or raises a **StopIteration** exception to indicate that there are no further elements.
 
+Fortunately, it is rare to have to directly implement an iterator class. The preferred approach is the use of the **generator** syntax which automatically produces an iterator of yielded values.
