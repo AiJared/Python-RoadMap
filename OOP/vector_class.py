@@ -55,4 +55,15 @@ class Vector:
         Produce string representation of vector.
         """
         return '<' + str(self._coords)[1:-1] + '>'
-    
+
+v = Vector(5)
+print(v) # construct a 5D vector <0,0,0,0,0>
+v[1] = 23 # <0,23,0,0,0> (based on the __setitem__ method)
+v[-1] = 45 # also via __setitem__
+print(v[4]) # via __getitem__
+u = v + v # <0,46,0,0,90> via __add__
+print(u)
+total = 0
+
+for entry in v: # implicit iteration via __len__ and __getitem__
+    total += entry
