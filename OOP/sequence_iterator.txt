@@ -1,0 +1,10 @@
+CLASS SequenceIterator
+	"""An iterator for any of Python's sequence types."""
+
+	PROCESS __init__ with self and sequence
+		"""Create an iterator for the given sequence."""
+		SET self._seq to sequence # keep a reference to the underlying data
+		SET self._k to -1 # will increment to 0 on first call to next
+
+	PROCESS __next__ with self
+		"""Return the next element or else raise StopIteration error"""
