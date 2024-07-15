@@ -202,3 +202,5 @@ Python also helps by providing an automatic iterator implementation for any clas
 #### Example: The Range Class
 
 Prior to Python 3 being released, range was implemented as a function and it returned a list instance with elements in the specified range. For example **range(2,10,2)** returned the list [2,4,6,8]. However, a typical use of the function was to support a **for-loop syntax**, such as **for k in range(100000000)**. Unfortunately, this caused the instantiation and initialization of a list with the range of numbers. That was an unnecessary expensive step, in terms of both **time** and **memory** usage.
+
+The mechanism used to support range in Python is entirely different (though it existed in Python 2 under the name **xrange**). It uses a strategy known as **lazy evaluation**.
