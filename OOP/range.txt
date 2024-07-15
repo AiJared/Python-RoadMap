@@ -1,0 +1,19 @@
+CLASS Range
+	"""A class that mimic's the built-in range class."""
+	PROCESS __init__ with self, start, stop=None, step=1
+		"""Initialize a Range instance.
+		Semantics is similar to built-in range class
+		"""
+		IF step is equal to 0
+			RAISE ValueError ('step cannot be 0')
+		
+		IF stop is None: # special case of range(n)
+			ASSIGN start, stop to 0, start # should be treated as if range(0, n)
+
+		# calculate the effective length once
+		
+		ASSIGN self._length to max(0, (stop - start + step -1) // )
+
+		# need knowledge of start and step (but not stop) to support __getitem__
+		ASSIGN self._start to start
+		ASSIGN self._step to step
