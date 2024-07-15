@@ -17,3 +17,7 @@ CLASS Range
 		# need knowledge of start and step (but not stop) to support __getitem__
 		ASSIGN self._start to start
 		ASSIGN self._step to step
+
+	PROCESS __len__ with self
+		"""Return number of entries in the range."""
+		RETURN self._length
