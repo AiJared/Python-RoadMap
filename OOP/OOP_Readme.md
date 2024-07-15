@@ -198,3 +198,7 @@ Iteration is an important concept in the design of data structures. an **iterato
 Fortunately, it is rare to have to directly implement an iterator class. The preferred approach is the use of the **generator** syntax which automatically produces an iterator of yielded values.
 
 Python also helps by providing an automatic iterator implementation for any class that defines both __len__ and __getitem__. To provide an instructive example of a low-level iterator, the code in the file **sequence_iterator.py** demonstrates such an iterator class that works on any collection that supports both __len__ and __getitem__. This class can be instantiated as **SequenceIterator(data)**. It operates by keeping an internal reference to the data sequence, as well as a current index into the sequence. Each time __next__ is called, the index is incremented, until reaching the end of the sequence.
+
+#### Example: The Range Class
+
+Prior to Python 3 being released, range was implemented as a function and it returned a list instance with elements in the specified range. For example **range(2,10,2)** returned the list [2,4,6,8]. 
