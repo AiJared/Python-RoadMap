@@ -22,3 +22,11 @@ class Range:
         # need knowlwdge of start and step (but not stop) to support __getitem__
         self._start = start
         self._step = step
+
+    def __len__(self):
+        """
+        Return number of entries in the range.
+        """
+        return self._length
+    
+    
