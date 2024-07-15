@@ -12,7 +12,7 @@ CLASS Range
 
 		# calculate the effective length once
 		
-		ASSIGN self._length to max(0, (stop - start + step -1) // )
+		ASSIGN self._length to max(0, (stop - start + step -1) // step)
 
 		# need knowledge of start and step (but not stop) to support __getitem__
 		ASSIGN self._start to start
