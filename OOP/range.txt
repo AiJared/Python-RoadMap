@@ -21,3 +21,13 @@ CLASS Range
 	PROCESS __len__ with self
 		"""Return number of entries in the range."""
 		RETURN self._length
+
+	PROCESS __getitem__ with self and k
+		"""Return entry at index k (using standard interpretation if negative)."""
+		IF k is less than 0
+			INCREMENT k with len(self)
+
+		IF 0 is not less than or equal to k less than self._length
+			RAISE IndexError('index out of range')
+
+		RETURN self._start + k * self._step
