@@ -215,3 +215,5 @@ The code in the file **range.py** provides a class named **Range** (so as to cle
 
 A natural way to organize various structural components of a software package is in a **hierarchical** fashion, with similar abstract definitions grouped together in a *level-by-level* manner that goes from specific to more general as one traverses up the hierarchy.
 An example is that of a building. Using mathematical notations, the set of houses is a **subset** of the set of buildings, but a **superset** of the set of ranches. The correspondence between levels is often referred to as a **relationship** as a house is a building and a ranch is a house.
+
+A hierarchical design is useful in software development, as common functionilty can be grouped at the most general level, thereby promoting reuse of code, while differentiated behaviors can be viewed as extensions of the general case, In object-oriented programming, the mechanism for a modular and hierarchical organization is a technique known as **inheritance**.
