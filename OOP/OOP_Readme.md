@@ -210,3 +210,7 @@ The code in the file **range.py** provides a class named **Range** (so as to cle
 - We compute the number of elements in the range as *max(0, (stop - start + step - 1) // step). It is worth testing this formula for both positive and negative step sizes.
 
 - The __getitem__ method properly supports negative indices by converting an *index - k* to *len(self) - k* before computing result.
+
+### Inheritance
+
+A natural way to organize various structural components of a software package is in a **hierarchical** fashion, with similar abstract definitions grouped together in a *level-by-level* manner that goes from specific to more general as one traverses up the hierarchy.
