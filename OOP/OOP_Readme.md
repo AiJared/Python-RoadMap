@@ -214,3 +214,4 @@ The code in the file **range.py** provides a class named **Range** (so as to cle
 ### Inheritance
 
 A natural way to organize various structural components of a software package is in a **hierarchical** fashion, with similar abstract definitions grouped together in a *level-by-level* manner that goes from specific to more general as one traverses up the hierarchy.
+An example is that of a building. Using mathematical notations, the set of houses is a **subset** of the set of buildings, but a **superset** of the set of ranches. The correspondence between levels is often referred to as a **relationship** as a house is a building and a ranch is a house.
