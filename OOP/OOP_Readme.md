@@ -223,3 +223,6 @@ There are two ways in which a subclass can differentiate itself from its supercl
 #### Python's Exception Hierarchy
 
 Another example of a rich inheritance hierarchy is the organization of various exception types in Python. The **BaseException** class is the root of the entire hierarchy, while the more specific Exception class includes the error types. Programmers are welcomed to define their own special exception classes to denote errors that may occur in the context of their application. Those user-defined exception types should be declared as subclasses of Exception.
+
+### Extending the CreditCard Class
+
