@@ -226,3 +226,8 @@ Another example of a rich inheritance hierarchy is the organization of various e
 
 ### Extending the CreditCard Class
 
+To demonstrate the mechanism for inheritance in Python, we revisit the **CreditCard** class, implementing a subclass that we name **PredatoryCreditCard**. The new class will differ from the original in two ways:
+
+1. If attempted charge is rejected because it would have exceeded the credit limit, a $5 fee will be charged and,
+
+2. There will be a mechanism for assessing a monthly interest charge on the outstanding balance, based upon an Annual Percentage Rate (APR) specified as a constructor parameter.
