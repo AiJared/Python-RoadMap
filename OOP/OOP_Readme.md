@@ -248,4 +248,4 @@ In a similar fashion, or PredatoryCreditCard class provides a new implementation
 
     super().charge(price).
 
-The return value of that call designated whether
+The return value of that call designated whether the charge was successful. We examine that return value to decide whether to assess a fee and in turn we return that value to the caller of method, so that the new version of charge has a similar outward interface as the original.
