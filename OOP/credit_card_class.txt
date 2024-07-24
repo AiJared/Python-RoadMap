@@ -66,3 +66,13 @@ CLASS PredatoryCreditCard(CreditCard)
 		
 		SUPER().__init__'s customer, bank, acnt and limit # calling the super constructor
 		ASSIGN self._apr to apr
+
+		PROCESS charge for self and price
+		"""Charge given price to the card, assuming sufficient credit limit
+		Return True if charge was processed
+		Return False and assess $5 fee if charge is denied
+		"""
+		ASSIGN success to super().charge's price # call inherited method
+		 IF not success
+			INCREASE self._balance by 5 # assess penalty
+		RETURN success
