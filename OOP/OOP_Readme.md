@@ -243,3 +243,9 @@ The body of the new class provides three member functions: __init__, **charge** 
     super().__init__(customer, bank, acnt, limit)
 
 call the __init__ method that was inherited from the CreditCard superclass. Note well that this method only accepts four parameters. We record te APR value on a new field named **_apr**.
+
+In a similar fashion, or PredatoryCreditCard class provides a new implementation of the new method relies on a call to the inherited method, with syntax
+
+    super().charge(price).
+
+The return value of that call designated whether
