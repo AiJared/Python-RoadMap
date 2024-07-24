@@ -238,3 +238,4 @@ To indicate the new class inherits from the existing class, our definition begin
     
     class PredatoryCreditClass(CreditCard)
 
+The body of the new class provides three member functions: __init__, **charge** and **process_month**. The __init__ constructor serves a very similar role to the original CreditCard constructor, except that for our new ckass, there is an extra parameter to specify the *annual percentage rate*.
