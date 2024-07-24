@@ -233,3 +233,7 @@ To demonstrate the mechanism for inheritance in Python, we revisit the **CreditC
 2. There will be a mechanism for assessing a monthly interest charge on the outstanding balance, based upon an Annual Percentage Rate (APR) specified as a constructor parameter.
 
 In accomplishing this goal, we demonstrate the techniques of **specialization** and **extension**. To charge a fee for an invalid charge attempt, we *override* the existing *charge* method, thereby specialing it to provide the new functionality (although the new version takes advantage of a call to the overridden version). To provide support for charging interest, we extend the class with a new method named **process_month**.
+
+To indicate the new class inherits from the existing class, our definition begins with 
+    class PredatoryCreditClass(CreditCard)
+
