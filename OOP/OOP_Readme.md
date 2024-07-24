@@ -169,23 +169,23 @@ To demonstrate the use of *operator overloading* via *special methods*, let's lo
 
 We therefore define a vector class that provides a better abstraction for the notion of a geometric vector. Internally, our vector relies upon an instance of a list, **_coords**, as its **storage mechanism**. By keeping the internal list **encapsulated**, we can enforce the desired public interface for instances of our class. A demonstration of supported behaviors invludes the following:
 
-v = Vector(5) # construct 5D <0,0,0,0,0>
+    v = Vector(5) # construct 5D <0,0,0,0,0>
 
-v[1] = 23 # <0,23,0,0,0>(based on use of __setitem__)
+    v[1] = 23 # <0,23,0,0,0>(based on use of __setitem__)
 
-v[-1] = 45 # <0,23,0,0,45>(also via __setitem__)
+    v[-1] = 45 # <0,23,0,0,45>(also via __setitem__)
 
-print(v[4]) # output 45 (via __getitem__)
+    print(v[4]) # output 45 (via __getitem__)
 
-u = v + v # <0,46,0,0,90> (via __add__)
+    u = v + v # <0,46,0,0,90> (via __add__)
 
-print(u) # output <0, 46, 0, 0, 90> via (__add__)
+    print(u) # output <0, 46, 0, 0, 90> via (__add__)
 
-total = 0 
+    total = 0 
 
-for entry in v: # implicit iteration via __len__ and __getitem__
+    for entry in v: # implicit iteration via __len__ and __getitem__
 
-    total += entry
+        total += entry
 
 We implement many of the behaviors by trivially invoking a similar behavior on the underlying list of coordinates. However, our implementation of __add__ is customized. Assuming the two operands are vectors with the same length, this method creates a new vector and sets the coordinates of the new vector to be equal to the respective sum of the operands' elements.
 
