@@ -51,3 +51,18 @@ CLASS CreditCard
 	PROCESS make_payment with self and amount
 		""Process customer payment that reduces balance."""
 		decrease self's balance by amount
+
+CLASS PredatoryCreditCard(CreditCard)
+	"""An extension to CreditCard that compounds interest and fees."""
+
+	PROCESS __init__ with self, customer, bank, acnt, limit and apr
+		""" Creates new predatory credit card instance.
+		The initial balance is zero
+		customer the name of the customer (e.g., "Jared Otieno")
+		bank     the name of the bank (e.g., "Co-operative Bank")
+		acnt	 the account identifier (e.g., "22334455")
+		limit    credit limit (measured in dollars)
+		apr      annual percentage rate (e.g, 0.0825 for 8.25% APR)
+		
+		SUPER().__init__'s customer, bank, acnt and limit # calling the super constructor
+		ASSIGN self._apr to apr
