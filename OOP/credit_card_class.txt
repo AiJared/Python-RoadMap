@@ -67,7 +67,7 @@ CLASS PredatoryCreditCard(CreditCard)
 		SUPER().__init__'s customer, bank, acnt and limit # calling the super constructor
 		ASSIGN self._apr to apr
 
-		PROCESS charge for self and price
+	PROCESS charge for self and price
 		"""Charge given price to the card, assuming sufficient credit limit
 		Return True if charge was processed
 		Return False and assess $5 fee if charge is denied
@@ -76,3 +76,11 @@ CLASS PredatoryCreditCard(CreditCard)
 		 IF not success
 			INCREASE self._balance by 5 # assess penalty
 		RETURN success
+
+	PROCESS process_month with self
+		"""Assess monthly interest on outstanding balance."""
+		IF self._balance is great than 0
+			"""If povitive balance, convert APR to monthly multiplicative factor
+			"""
+		ASSIGN monthly_factor to pow(1 + self._apr, 1/12)
+		self._balance *= monthly_factor
