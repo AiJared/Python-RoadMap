@@ -250,4 +250,4 @@ In a similar fashion, or PredatoryCreditCard class provides a new implementation
 
 The return value of that call designated whether the charge was successful. We examine that return value to decide whether to assess a fee and in turn we return that value to the caller of method, so that the new version of charge has a similar outward interface as the original.
 
-The **process_month** method is a new behavior, so there is no inherited version upon which to rely. In our model, this method should be invoked by the bank, once each month.
+The **process_month** method is a new behavior, so there is no inherited version upon which to rely. In our model, this method should be invoked by the bank, once each month to add new interest charges to the customer's balance. The most challenging aspect in implementing this method is making sure we have working knowledge of how an annual percentage rate by twelve get to a monthly rate(that would be too predatory, as it would result in a higher APR than advertised).
