@@ -92,8 +92,15 @@ class PredatoryCreditCard(CreditCard):
         if not success:
             self._balance += 5
         return success
-
-
+    
+    def process_month(self):
+        """
+        Assess monthly interest on outstanding balance.
+        """
+        if self._balance > 0:
+            """If positive balance, convert APR to monthly multiplicative factor."""
+            mothly_factor = pow(1 + self._apr, 1/12)
+            self._balance *= mothly_factor
 # Testing the class
 if __name__ == '__main__':
     wallet = []
