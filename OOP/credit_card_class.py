@@ -82,6 +82,17 @@ class PredatoryCreditCard(CreditCard):
         super().__init__(customer, bank, acnt, limit) # calling the super constructor
         self._apr = apr
 
+    def charge(self, price):
+        """
+        Charge given price to the card, assuming sufficient credit
+        Return True if charge was processed
+        Return False and assess $5 fee if charge is denied
+        """
+        success = super().charge(price) # call the inherted method
+        if not success:
+            self._balance += 5
+        return success
+
 
 # Testing the class
 if __name__ == '__main__':
