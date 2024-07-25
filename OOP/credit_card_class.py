@@ -66,6 +66,23 @@ class CreditCard:
         """
         self._balance -= amount
 
+class PredatoryCreditCard(CreditCard):
+    """
+    An extension to CreditCard that compunds interest and fees.
+    """
+    def __init__(self, customer, bank, acnt, limit, apr):
+        """
+        Creates new predatory credit card instance.
+        customer the name of the customer (e.g., "Jared Otieno")
+        bank     the name of the bank(e.g., "Co-operative Bank of Kenya")
+        acnt     the account identifier (e.g., "22334455")
+        limit    credit limit (measured in dollars)
+        apr      annual percentage rate (e.g., 0.0825 for 8.25% APR)
+        """
+        super().__init__(customer, bank, acnt, limit) # calling the super constructor
+        self._apr = apr
+
+
 # Testing the class
 if __name__ == '__main__':
     wallet = []
