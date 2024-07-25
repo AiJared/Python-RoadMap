@@ -251,3 +251,7 @@ In a similar fashion, or PredatoryCreditCard class provides a new implementation
 The return value of that call designated whether the charge was successful. We examine that return value to decide whether to assess a fee and in turn we return that value to the caller of method, so that the new version of charge has a similar outward interface as the original.
 
 The **process_month** method is a new behavior, so there is no inherited version upon which to rely. In our model, this method should be invoked by the bank, once each month to add new interest charges to the customer's balance. The most challenging aspect in implementing this method is making sure we have working knowledge of how an annual percentage rate by twelve get to a monthly rate(that would be too predatory, as it would result in a higher APR than advertised). The correct computation is to take the twelfth-root of 1 + self._apr, and use that as a **multiplicative factor**. For example, if the APR is 0.0825 (representing 8.25%), we compute tweth-root of 1.0825 which is close to 1.006628, and therefore charge 0.06628% interest per month. In this way, each $100 of debt will amass %8.25 of compounded interest in a year.
+
+### Protected Members
+
+Our PredatoryCreditCard subclass directly accesses the data member **self._balance**, which was established by the parent CreditCard class. The underscored name, by convention, suggests that this is a **nonpublic** member so we might ask if it okay that we access it in this fashion.
