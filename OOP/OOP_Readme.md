@@ -263,3 +263,5 @@ Python does not support formal access control, but names beginning with single u
 As a second example of the use of inheritance, we develope a hierarchy of classes for iterating numeric progressions. A **numeric progression** is a sequence of numbers, where each number depends on one or more of the previous numbers. For example, an **arithmetic progression** determines the next number by adding a fixed constant to the previous value and a **geometric progression** determines the next number by multiplying the previous value by a fixes constant.
 
 To maximize reusability of code, we develope a hierarchy of classes stemming from a general base class that we name **Progression**. Technically, the Progression class produces the progression of whole numbers: 0, 1, 2, ....However, this class is designed to serve as the base class for the progression types, providing as much common functionality as possible, and thereby minimizing the burden on the subclasses. 
+
+The constructor for this class accepts a starting value for the progression (0 by default), and initializes a data member, **self._current**, to that value.
