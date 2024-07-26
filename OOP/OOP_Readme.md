@@ -265,3 +265,17 @@ As a second example of the use of inheritance, we develope a hierarchy of classe
 To maximize reusability of code, we develope a hierarchy of classes stemming from a general base class that we name **Progression**. Technically, the Progression class produces the progression of whole numbers: 0, 1, 2, ....However, this class is designed to serve as the base class for the progression types, providing as much common functionality as possible, and thereby minimizing the burden on the subclasses. 
 
 The constructor for this class accepts a starting value for the progression (0 by default), and initializes a data member, **self._current**, to that value.
+
+The Progression class implements the conventions of a Python **iterator** namely the special **__next__** and **__iter__** methods. If a user of the class creates a progression as
+
+    seq = Progression()
+
+each call to the
+
+    next(seq)
+
+will return a subsequent element of the progression sequence. It would also be possible to use a for-loop syntax,
+
+    for value in seq:
+
+although we note that our default progression is defined as an infinite sequence.
