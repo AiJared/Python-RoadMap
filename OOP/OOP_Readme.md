@@ -279,3 +279,5 @@ will return a subsequent element of the progression sequence. It would also be p
     for value in seq:
 
 although we note that our default progression is defined as an infinite sequence.
+
+To better separate the mechanics of the iterator convention from the core logic of advancing the progression, our framework relies on a nonpublic method named **_advance** to update the value of the self._current field. In the default implementation, _advance adds one to the current value, but our intent is that subclasses will override _advance to provide a different rule for computing the next entry.
