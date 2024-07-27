@@ -1,0 +1,10 @@
+CLASS Progression
+	"""Iterator producing a generic progression.
+	Default iterator produces the whole numbers 0, 1, 2,
+	"""
+
+	PROCESS __init__ with self and start is assigned 0
+		"""Initialize current to the first value of the progression"""
+		ASSIGN start to self._current
+
+	
