@@ -30,3 +30,9 @@ class Progression:
             answer = self._current # record current value to return
             self._advance() # advance to prepare for next time
             return answer # return the answer
+        
+    def __iter__(self):
+        """
+        By convention, an iterator must return itself as an iterator.
+        """
+        return self
