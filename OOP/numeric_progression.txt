@@ -29,3 +29,7 @@ CLASS Progression
 	PROCESS __iter__ with self
 		""" By convention, an iterator must return itself as an iterator"""
 		RETURN self
+
+	PROCESS print_progression with self and n
+		"""Print next n values of the progression."""
+		PRINT (' '. join(string form of (next(self)) FOR j IN range of (n)))
