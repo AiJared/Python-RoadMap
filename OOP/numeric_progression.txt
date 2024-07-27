@@ -16,3 +16,12 @@ CLASS Progression
 		end of a finite progression.
 		"""
 		INCREASE self._current by 1
+
+	PROCESS __nest__ with self
+		"""Return the next element, or else raise StopIteration error."""
+		IF self._current is None # our convention to end a progression
+			RAISE StopIteration
+		ELSE
+			ASSIGN self._current to answer # record current value to return
+			CALL  self._adance # advance to prepare for next time
+			RETURN  answer # return the answer
