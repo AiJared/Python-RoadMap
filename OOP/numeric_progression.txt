@@ -25,3 +25,7 @@ CLASS Progression
 			ASSIGN self._current to answer # record current value to return
 			CALL  self._adance # advance to prepare for next time
 			RETURN  answer # return the answer
+
+	PROCESS __iter__ with self
+		""" By convention, an iterator must return itself as an iterator"""
+		RETURN self
