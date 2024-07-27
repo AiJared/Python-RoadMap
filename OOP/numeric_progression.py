@@ -36,3 +36,10 @@ class Progression:
         By convention, an iterator must return itself as an iterator.
         """
         return self
+    
+    def print_progression(self, n):
+        """
+        Print next n values of the progression.
+        """
+        print(' '.join(str(next(self)) for j in range(n)))
+
