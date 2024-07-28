@@ -58,3 +58,9 @@ class ArithmeticProgression(Progression):
 
         super().__init__(start) # initialize the base class
         self._increment = increment
+
+    def _advance(self):
+        """
+        Update the current value by adding the fixed increment
+        """
+        self._current += self._increment
