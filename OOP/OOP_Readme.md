@@ -299,3 +299,7 @@ produces the sequence 0,4,8,12,..., and
 produces the sequence 1, 5, 9, 13,....
 
 The body of the ArithmeticProgression constructor calls the super constructor to initialize the **_current** data member to the desired start value. Then it directly establishes the new **_increment** data member for the arithmetic progression. The only remaining detail in our implementation is to override the **_advance** method so as to add the increment to the current value.
+
+#### A Geometric Progression Class
+
+In a geometric progression, each value is produced by multplying the preceding value by a fixed **constant**, known as the **base** of the geometric progression.
