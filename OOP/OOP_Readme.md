@@ -283,3 +283,7 @@ although we note that our default progression is defined as an infinite sequence
 To better separate the mechanics of the iterator convention from the core logic of advancing the progression, our framework relies on a nonpublic method named **_advance** to update the value of the self._current field. In the default implementation, _advance adds one to the current value, but our intent is that subclasses will override _advance to provide a different rule for computing the next entry.
 
 For convenience, the Progression class also provides a utility method, named **print_progression** that displays the next **n** values of the progression.
+
+#### An Arithmetic Progression Class
+
+An arithmetic progression adds a fixed constant to one term of the progression to produce the next. For example, using an increment of 4 for an arithmetic progression that starts at 0 results in the sequence 0,4,8,12,....
