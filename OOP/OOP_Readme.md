@@ -287,3 +287,5 @@ For convenience, the Progression class also provides a utility method, named **p
 #### An Arithmetic Progression Class
 
 An arithmetic progression adds a fixed constant to one term of the progression to produce the next. For example, using an increment of 4 for an arithmetic progression that starts at 0 results in the sequence 0,4,8,12,....
+
+The constructor for this new class accepts both an increment value and a starting value as parameters, although default values for each are provided.
