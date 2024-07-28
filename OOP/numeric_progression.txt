@@ -52,3 +52,15 @@ CLASS ArithmeticProgression (Inherit from Progression) # inherit from Progressio
 		"""Update current value by adding the fixed increment"""
 		
 		INCREASE self._current with self._increment
+
+CLASS GeometricProgression(Inherit from Progression) # inherit from progression
+	"""Iterator producing a geometric progression."""
+	
+	PROCESS __init__ with self, base=2 and start=1
+		"""Creates a new geometric progression
+		base	the fixed constant multiplied to each term (default 2)
+		start	the first term of the progression (default 1)
+		"""
+
+		super().__init__ with start
+		ASSIGN base to self._base
