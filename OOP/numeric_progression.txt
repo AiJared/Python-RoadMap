@@ -64,3 +64,8 @@ CLASS GeometricProgression(Inherit from Progression) # inherit from progression
 
 		super().__init__ with start
 		ASSIGN base to self._base
+
+	PROCESS _advance with self
+		"""Update current value by multiplying it by the base value."""
+
+		MULTIPLY self._current by self._base
