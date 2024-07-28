@@ -110,7 +110,7 @@ We draw attention to the difference between the method signature as declared wit
 
 A user can create an instance of the CreditCard class using a syntx as: 
 
-*cc = CreditCard('Jared Otieno', 'Co-operative bank', '5522 4433 6611 7788', 100)*
+    cc = CreditCard('Jared Otieno', 'Co-operative bank', '5522 4433 6611 7788', 100)
 
 Internally this results in a call to the specifically named **__init__** method that serves as the **constructor** of the class. Its key job is to establish the state of a newly created credit card object with appropriet instance variables. In the case of of the CreditCard class, each object maintains five instance variables, which we name: **_customer, _bank, _account, _limit and _balance**. The initial values for the first four of those five are provided as explicit parameters that are sent by the user when instantiating the credit card, and assigned within the body of the constructor. For example, the command **self._customer = customer**, assigns the instance variable self._customer to the parameter customer; note that because customer is **unqualified** on the right-hand side, it refers to the parameter in the local namespace.
 
