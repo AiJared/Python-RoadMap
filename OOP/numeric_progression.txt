@@ -47,3 +47,8 @@ CLASS ArithmeticProgression (Inherit from Progression) # inherit from Progressio
 
 		CALL super().__init__ with start # initialize the base class
 		ASSIGN increment to self._increment
+
+	PROCESS _advance with self # override the inherited version
+		"""Update current value by adding the fixed increment"""
+		
+		INCREASE self._current with self._increment
