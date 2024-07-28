@@ -80,3 +80,10 @@ class GeometricProgression(Progression):
 
         super().__init__(start)
         self._base = base
+
+    def _advance(self):
+        """
+        Update current value by multiplying it by the base value.
+        """
+
+        self._current *= self._base
