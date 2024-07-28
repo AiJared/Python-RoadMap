@@ -87,3 +87,18 @@ class GeometricProgression(Progression):
         """
 
         self._current *= self._base
+
+class FibonacciProgression(Progression):
+    """
+    Iterator producing a generalized fibonacci progression.
+    """
+
+    def __init__(self, first=0, second=1):
+        """
+        Create a Fibonacci progression.
+        first   the first term of the progression (default 0)
+        second  the second term of the progression (default 1)
+        """
+
+        super().__init__(first) # start progression at first
+        self._prev = second - first
