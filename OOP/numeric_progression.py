@@ -102,3 +102,10 @@ class FibonacciProgression(Progression):
 
         super().__init__(first) # start progression at first
         self._prev = second - first
+
+    def _advance(self):
+        """
+        update current value by taking the sum of the previous two.
+        """
+        self._prev, self._current = self._current, self._prev + self._current
+        
