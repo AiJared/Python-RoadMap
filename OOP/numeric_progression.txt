@@ -69,3 +69,16 @@ CLASS GeometricProgression(Inherit from Progression) # inherit from progression
 		"""Update current value by multiplying it by the base value."""
 
 		MULTIPLY self._current by self._base
+
+CLASS FibonacciProgression(Inherit Progression)
+	"""Iterator producing a generalized Fibonacci progression."""
+	
+	PROCESS __init__ with self, first=0 and second=1
+		"""
+		Create a Fibonacci progression.
+		first	the first term of the progression (default 0)
+		second  the second term of the progression (default 1)
+		"""
+
+		CALL super().__init__'s first # start progression at first
+		ASSIGN second - first to self._prev # fictitious value preceding the first
