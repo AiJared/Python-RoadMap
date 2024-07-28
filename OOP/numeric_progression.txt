@@ -34,7 +34,7 @@ CLASS Progression
 		"""Print next n values of the progression."""
 		PRINT (' '. join(string form of (next(self)) FOR j IN range of (n)))
 
-CLASS ArithmeticProgression (Inherit from Progression)
+CLASS ArithmeticProgression (Inherit from Progression) # inherit from Progression
 	"""Iterator producing an arithmetic progression."""
 
 	PROCESS __init__ with self, increment = 1 and start = 0
