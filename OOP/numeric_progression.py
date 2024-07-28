@@ -64,3 +64,19 @@ class ArithmeticProgression(Progression):
         Update the current value by adding the fixed increment
         """
         self._current += self._increment
+
+class GeometricProgression(Progression):
+    """
+    Iterator producing a geometric progression.
+    """
+
+    def __init__(self, base=2, start=1):
+        """
+        Creates a new geometric progression.
+
+        base    the fixed constant multiplied to each term (default 2)
+        start   the first term of the progression (default 1)
+        """
+
+        super().__init__(start)
+        self._base = base
