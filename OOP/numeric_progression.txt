@@ -82,3 +82,7 @@ CLASS FibonacciProgression(Inherit Progression)
 
 		CALL super().__init__'s first # start progression at first
 		ASSIGN second - first to self._prev # fictitious value preceding the first
+
+	PROCESS _advance with self
+		"""update current value by taking the sum of the previous two."""
+		ASSIGN self._current and self_pre + self._current to self._prev and self._current respectively.
