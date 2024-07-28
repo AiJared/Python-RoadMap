@@ -303,3 +303,5 @@ The body of the ArithmeticProgression constructor calls the super constructor to
 #### A Geometric Progression Class
 
 In a geometric progression, each value is produced by multplying the preceding value by a fixed **constant**, known as the **base** of the geometric progression. The starting point of a geometric progression is traditionally 1, rather than 0, because multiplying 0 by any factor results in 0. As an example, a geometric progression with base 2 proceeds as 1,2,4,8,16,....
+
+The constructor uses 2 as the default base and 1 as a default starting value, but either of those can be varied using optional parameters.
