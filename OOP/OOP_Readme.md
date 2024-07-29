@@ -309,3 +309,7 @@ The constructor uses 2 as the default base and 1 as a default starting value, bu
 #### Fibonacci Progression Class
 
 In **Fibonacci progression**, each value of a Fibonacci series is the sum of the two most recent values. To begin the series, the first two values are conventionally 0 and 1, leading to the Fibonacci series 0,1,1,2,3,5,8,.... More generally, suc a series can be generated from any starting values. For example, if we start with values 4 and 6, the series proceeds as 4,6,10,16,25,42,....
+
+### Abstract Base Classes
+
+A class is an **abstract base class** if its only purpose is to serve as a base class through inheritance. More formally, an abstract base class is one that cannot instantiated, while a **concrete class** is one that can be instantiated. By this definition, our progression class is technically concrete, although we essentially designed it as an abstract base class.
