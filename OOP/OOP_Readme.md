@@ -313,3 +313,5 @@ In **Fibonacci progression**, each value of a Fibonacci series is the sum of the
 ### Abstract Base Classes
 
 A class is an **abstract base class** if its only purpose is to serve as a base class through inheritance. More formally, an abstract base class is one that cannot instantiated, while a **concrete class** is one that can be instantiated. By this definition, our progression class is technically concrete, although we essentially designed it as an abstract base class.
+
+In statically typed languages such as Java and C++, an abstract base class serves as a formal type that may guarantee one or more **abstract methods**. This provides support for **Polymorphism**, as a variable may have an abstract base class as its declared type, even though it refers to an instance of a concrete subclass.
