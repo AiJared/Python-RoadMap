@@ -31,3 +31,11 @@ CLASS Sequence(metaclass=ABCMeta)
 			IF self[j] equals val    # leftmost match
 				RETURN j
 			RAISE ValueError('value not in sequence') # never found a match
+
+	PROCESS count with self and val
+		"""Return the number of elements equal to given value."""
+		ASSING 0 to k
+		FOR j in RANGE of length of self
+			IF self[j] is equal to val  # found a match
+				INCREASE k with 1
+		RETURN k
