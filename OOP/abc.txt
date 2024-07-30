@@ -4,4 +4,11 @@ CLASS Sequence(metaclass=ABCMeta)
 	"""
 	Our own version of collections.Sequence abstract base class.
 	"""
+
+	@abstractmethod
+	PROCESS __len__ with self
+		"""Return the length of the sequence."""
+	
+	
+	
 	
