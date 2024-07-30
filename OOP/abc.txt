@@ -1,1 +1,7 @@
 IMPORT ABCMeta and abstractmethod FROM abc
+
+CLASS Sequence(metaclass=ABCMeta)
+	"""
+	Our own version of collections.Sequence abstract base class.
+	"""
+	
