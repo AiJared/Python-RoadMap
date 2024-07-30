@@ -11,4 +11,8 @@ CLASS Sequence(metaclass=ABCMeta)
 	
 	
 	
+	@abstractmethod
+	PROCESS __getitem__(with self and j)
+		"""Return the element at index j of the sequence."""
+
 	
