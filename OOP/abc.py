@@ -16,3 +16,15 @@ class Sequence(metaclass=ABCMeta):
         """
         Return the element at index j of the sequence.
         """
+
+    def __contains__(self, val):
+        """
+        Retrun True if val is found in the sequence; False otherwise.
+        """
+
+        for j in range(len(self)):
+            if self[j] == val: # found match
+                return True
+        return False
+    
+    
