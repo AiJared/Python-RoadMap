@@ -10,3 +10,9 @@ class Sequence(metaclass=ABCMeta):
         """
         Return the length of the sequence.
         """
+
+    @abstractmethod
+    def __getitem__():
+        """
+        Return the element at index j of the sequence.
+        """
