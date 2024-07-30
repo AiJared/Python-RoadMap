@@ -27,4 +27,13 @@ class Sequence(metaclass=ABCMeta):
                 return True
         return False
     
-    
+    def index(self, val):
+        """
+        Return leftmost index at which val is found (or raise ValueError.)
+        """
+
+        for j in range(len(self)):
+            if self[j] == val:
+                return j
+            raise ValueError("Value in Sequence") # never found a match
+        
