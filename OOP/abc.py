@@ -36,4 +36,14 @@ class Sequence(metaclass=ABCMeta):
             if self[j] == val:
                 return j
             raise ValueError("Value in Sequence") # never found a match
+
+    def count(self, val):  
+        """
+        Return the number of elements equal to given value.
+        """ 
         
+        k = 0
+        for j in range(len(self)):
+            if self[j] == val:
+                k += 1
+        return k
