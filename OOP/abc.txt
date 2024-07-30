@@ -16,3 +16,9 @@ CLASS Sequence(metaclass=ABCMeta)
 		"""Return the element at index j of the sequence."""
 
 	
+	PROCESS __contains__ with self and val
+		"""Return True if val found in the sequence; False otherwise."""
+		FOR j in RANGE of length of self
+			IF self[j] is equal to val # found match
+				RETURN True
+		RETURN False
