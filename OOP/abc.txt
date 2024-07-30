@@ -22,3 +22,12 @@ CLASS Sequence(metaclass=ABCMeta)
 			IF self[j] is equal to val # found match
 				RETURN True
 		RETURN False
+
+	PROCESS index with self and val
+		"""
+		Return leftmost index at which val is found (or raise ValueError.)
+		"""
+		FOR  j in RANGE of length of self
+			IF self[j] equals val    # leftmost match
+				RETURN j
+			RAISE ValueError('value not in sequence') # never found a match
