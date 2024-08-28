@@ -12,7 +12,7 @@ def capital_indexes(value):
 
     for i, char in enumerate(value): # loop through the string with both index and character
         if char.isupper():           # check if the char is upper case
-            indexes.append(i)        # Add the index to the indexes list if its character is upper
+            indexes.append(i)        # Adds the index of the uppercase character to the indexes list
     return indexes                   # return the list of indexes
 
 value1 = capital_indexes("HeLlO")
