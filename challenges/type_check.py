@@ -7,7 +7,7 @@ For example, calling only_ints(1, 2) should return True, while calling only_ints
 """
 
 def only_ints(inta, intb):
-    if isinstance(inta, int) and isinstance(intb, int):
+    if type(inta) is int and type(intb) is int:
         return True
     else:
         return False
