@@ -7,3 +7,10 @@ Calling the function multiple times should (usually) return different numbers.
 
 For example, calling random_number() some times might first return 42, then 63, then 1.
 """
+
+import random
+
+def random_number():
+    return random.randint(1,100)
+
+print(random_number())
