@@ -16,8 +16,8 @@ cannot use the multiplication, modulo, or division operators
 # with division
 
 def even(k):
-    i = k / 2
-    if k / 2 == int(i):
+    i = k / 2               # create a variable and assign it the result of k/2
+    if k / 2 == int(i):     # check if the result of k/2 is an integer
         return True
     else:
         return False
