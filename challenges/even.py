@@ -4,11 +4,22 @@ returns True if k is even, and False otherwise. However, your function
 cannot use the multiplication, modulo, or division operators
 """
 
-# With modulo
+# # With modulo
+# def even(k):
+#     if k%2 == 0:        # check if the modulo of k is 2
+#         return True
+#     else:
+#         return False
+    
+# print(even(7))
+
+# with division
+
 def even(k):
-    if k%2 == 0:        # check if the modulo of k is 2
+    i = k / 2
+    if k / 2 == int(i):
         return True
     else:
         return False
-    
+
 print(even(7))
