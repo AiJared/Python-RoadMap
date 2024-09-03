@@ -6,7 +6,7 @@ cannot use the multiplication, modulo, or division operators
 
 # With modulo
 def even(k):
-    if k%2 == 0:
+    if k%2 == 0:        # check if the modulo of k is 2
         return True
     else:
         return False
