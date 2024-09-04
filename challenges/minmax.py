@@ -6,14 +6,15 @@ max in implementing your solution
 """
 
 def minmax(data):
-    
+    # Start with the first number as both minimum and maximum
     smallest = largest = data[0]
 
+    # Iterate through the sequence to find the actual minimum and maximum numbers
     for num in data:
         if num < smallest:
-            smallest = num
+            smallest = num # Update smallest if the minimum number is found
         if num > largest:
-            largest = num
+            largest = num  # Update largest if the maximum number is found
     return (smallest, largest)
 
 print(minmax([1,2,3,4]))
