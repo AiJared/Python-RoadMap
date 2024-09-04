@@ -24,3 +24,5 @@ def even(k):
         return False
 
 print(even(7))
+
+# Solution with Bitwise AND Operation
