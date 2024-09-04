@@ -26,3 +26,12 @@ def even(k):
 print(even(7))
 
 # Solution with Bitwise AND Operation
+"""
+In Python you can determine if a number is even or odd using the bitwise AND operator &.
+Specifically, even numbers has their least significant bit (rightmost bit) set to 0.
+The number 1 in binary is represented as 0001. Therefore you can use k & 1 to check the
+least significant bit of k.
+
+If k & 1 is 0 - k is even
+If k & 1 is 1 - k is odd
+"""
