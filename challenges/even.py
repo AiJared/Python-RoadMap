@@ -37,7 +37,7 @@ If k & 1 is 1 - k is odd
 """
 
 def is_even(k):
-    return k & 1 == 0
+    return k & 1 == 0 # bitwise AND operation to check if the least significant bit of k is 0
 
 print(is_even(7))
 print(is_even(8))
