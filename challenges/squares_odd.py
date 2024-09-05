@@ -12,3 +12,9 @@ def squares(n):
     return total                  # return the cummulated total
 
 print(squares(5))
+
+# Using List Comprehension and the sum() Function
+def squares(n):
+    return sum(num ** 2 for num in range(1, n) if num % 2 != 0)
+
+print(squares(5))
