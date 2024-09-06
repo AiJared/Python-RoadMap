@@ -9,3 +9,9 @@ def reverse_list(n):
 
 print(reverse_list([3,5,6,4,2]))
 
+# Using slicing
+
+def reverse_list(n):
+    return n[::-1]
+
+print(reverse_list([3,5,6,4,2]))
