@@ -3,3 +3,11 @@ integers, so that the numbers are listed in the opposite order than they
 were before, and compare this method to an equivalent Python function
 for doing the same thing.
 
+PROCESS reverse_list(n)
+    result_list is []
+
+    FOR i, j in enumerate(n)
+        IF i is 0
+            APPEND j to result_list
+            INCREMENT i
+    RETURN result_list
