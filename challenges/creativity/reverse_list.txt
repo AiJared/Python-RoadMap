@@ -5,9 +5,10 @@ for doing the same thing.
 
 PROCESS reverse_list(n)
     result_list is []
+    k is 0
 
     FOR i, j in enumerate(n)
-        IF i is 0
+        IF i > 0
             APPEND j to result_list
             INCREMENT i
     RETURN result_list
