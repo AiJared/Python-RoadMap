@@ -10,6 +10,7 @@ then the numbers are different.
 """
 
 def distinct_nums(nums):
+    # compare the length of the list with the length of the set of the list
     return len(nums) ==  len(set(nums))
 
 print(distinct_nums([2,3,4,5]))
