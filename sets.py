@@ -72,3 +72,5 @@ print(nums1 - nums2) # return elements that are only in the first set and not th
 """
 You can check if an element is a member of a set using the in keyword.
 """
+print(2 in numbers)
+print(10 in numbers)
