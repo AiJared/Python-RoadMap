@@ -89,5 +89,5 @@ which is faster than doing the same for a list.
 One common use case is to remove duplicates from a list as shown below.
 """
 nums = [1,2,2,3,4,4,5,6]
-unique_nums = list(set(nums))
+unique_nums = list(set(nums)) # convert to set the back to list
 print(unique_nums)
