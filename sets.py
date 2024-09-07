@@ -16,3 +16,18 @@ won't be added.
 on order when iterating through a set or printing its elements.
 3. Mutable - You can add or remove elements from a set.
 """
+
+# Basic Set Operations:
+# 1. Creating a set
+
+"""
+You can create a set by just creating a variable and a collection of its elemets in curly braces
+"""
+numbers = {1,2,3,4,5}
+print(numbers)
+
+"""
+You can also use built-in set methos. Perfect for creating an empty set.
+"""
+empty_set = set()
+print(empty_set)
