@@ -74,3 +74,12 @@ You can check if an element is a member of a set using the in keyword.
 """
 print(2 in numbers)
 print(10 in numbers)
+
+# Why Use Sets?
+"""
+There are a number of reasons to use sets.
+1. Uniqueness: If you want to ensure that all the values in a sequence are unique, use sets.
+(for example you can eliminate duplicate values in a list using a set).
+2. Faster operations: To check if a value is a member of a set you just need to use the keyword in
+which is faster than doing the same for a list.
+"""
