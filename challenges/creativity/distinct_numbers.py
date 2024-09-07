@@ -9,3 +9,8 @@ created from that list. Since set cannot contain duplicate values, if the length
 then the numbers are different.
 """
 
+def distinct_nums(nums):
+    return len(nums) ==  len(set(nums))
+
+print(distinct_nums([2,3,4,5]))
+print(distinct_nums([2,2,3,4]))
