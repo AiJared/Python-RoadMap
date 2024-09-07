@@ -67,3 +67,8 @@ print(nums1 & nums2) # return elements in both sets
 
 # 3. Difference
 print(nums1 - nums2) # return elements that are only in the first set and not the second
+
+# Checking for Membership
+"""
+You can check if an element is a member of a set using the in keyword.
+"""
