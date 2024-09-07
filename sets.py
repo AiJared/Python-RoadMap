@@ -63,7 +63,7 @@ nums2 = {3,4,5,6}
 print(nums1 | nums2) # combine all unique elements
 
 # 2. Intersection
-print(nums1 & nums2)
+print(nums1 & nums2) # return elements in both sets
 
 # 3. Difference
 print(nums1 - nums2)
