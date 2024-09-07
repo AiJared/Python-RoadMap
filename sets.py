@@ -31,3 +31,11 @@ You can also use built-in set methos. Perfect for creating an empty set.
 """
 empty_set = set()
 print(empty_set)
+
+# 2. Adding elements to a set
+numbers.add(5)
+print(numbers)
+
+## Try to add an existing element
+numbers.add(4)
+print(numbers) # the new element 4 is ignored because it already exists
