@@ -39,3 +39,11 @@ print(numbers)
 ## Try to add an existing element
 numbers.add(4)
 print(numbers) # the new element 4 is ignored because it already exists
+
+# 3. Removing elements from a set
+numbers.remove(5)
+print(numbers)
+
+## Using discard won't throw an error if the element does not exist
+numbers.discard(10)
+print(numbers)
