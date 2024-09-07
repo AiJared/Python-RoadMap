@@ -55,3 +55,15 @@ Set are useful for carrying out mathematical operations such as union, intersect
 2. Intersection (&) - Returns elements that are only common to both sets.
 3. Difference (-) - Returns only elements that are in one set and not the other.
 """
+
+# 1. Union
+nums1 = {1,2,3,4}
+nums2 = {3,4,5,6}
+
+print(nums1 | nums2)
+
+# 2. Intersection
+print(nums1 & nums2)
+
+# 3. Difference
+print(nums1 - nums2)
