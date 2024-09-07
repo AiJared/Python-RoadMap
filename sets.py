@@ -47,3 +47,11 @@ print(numbers)
 ## Using discard won't throw an error if the element does not exist
 numbers.discard(10)
 print(numbers)
+
+# Set Operations
+"""
+Set are useful for carrying out mathematical operations such as union, intersection and different.
+1. Union (|) - Combines elements from both sets without intersection(without duplicates).
+2. Intersection (&) - Returns elements that are only common to both sets.
+3. Difference (-) - Returns only elements that are in one set and not the other.
+"""
