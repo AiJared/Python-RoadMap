@@ -8,6 +8,7 @@ def distinct_odd_pair(nums):
 
     for i in range(len(nums)):
         for j in range(i+1, len(nums)):
+            # check if both numbers are odd
             if nums[i] % 2 != 0 and nums[j] % 2 != 0:
                 distinct_pairs.append((nums[i], nums[j]))
     
