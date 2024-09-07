@@ -83,3 +83,11 @@ There are a number of reasons to use sets.
 2. Faster operations: To check if a value is a member of a set you just need to use the keyword in
 which is faster than doing the same for a list.
 """
+
+# Example: Removing Duplicates From a List
+"""
+One common use case is to remove duplicates from a list as shown below.
+"""
+nums = [1,2,2,3,4,4,5,6]
+unique_nums = list(set(nums))
+print(unique_nums)
