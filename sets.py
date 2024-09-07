@@ -66,4 +66,4 @@ print(nums1 | nums2) # combine all unique elements
 print(nums1 & nums2) # return elements in both sets
 
 # 3. Difference
-print(nums1 - nums2)
+print(nums1 - nums2) # return elements that are only in the first set and not the second
