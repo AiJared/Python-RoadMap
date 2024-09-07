@@ -60,7 +60,7 @@ Set are useful for carrying out mathematical operations such as union, intersect
 nums1 = {1,2,3,4}
 nums2 = {3,4,5,6}
 
-print(nums1 | nums2)
+print(nums1 | nums2) # combine all unique elements
 
 # 2. Intersection
 print(nums1 & nums2)
