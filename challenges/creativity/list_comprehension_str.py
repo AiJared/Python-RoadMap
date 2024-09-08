@@ -8,3 +8,6 @@ characters literally.
 Use the the chr() function, which converts ASCII values into their corresponding characters. 
 The ASCII values for lowercase letters 'a' to 'z' are from 97 to 122.
 """
+
+alphabet = [chr(i) for i in range(97, 123)]
+print(alphabet)
