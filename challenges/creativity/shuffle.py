@@ -14,3 +14,12 @@ implement your own version of the shuffle function.
 3. Swap the element at index i with the element at index j
 4. Continue this process until all the elements have been shuffled.
 """
+
+import random
+
+def my_shuffle(data):
+    n = len(data)
+
+    for i in range(n):
+        j = random.randint(i, n-1)
+        data[i], data[j] = data[j], data[i]
