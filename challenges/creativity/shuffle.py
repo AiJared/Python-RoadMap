@@ -19,9 +19,11 @@ import random
 
 def my_shuffle(data):
     n = len(data)
-
+    # iterate through the list
     for i in range(n):
+        # Pick a random index between the current index and the end of the list
         j = random.randint(i, n-1)
+        # swap the elements at index i and j
         data[i], data[j] = data[j], data[i]
 
 my_list = [1,2,3,4,5,6,7,8,9]
