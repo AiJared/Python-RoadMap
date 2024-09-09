@@ -23,3 +23,7 @@ def my_shuffle(data):
     for i in range(n):
         j = random.randint(i, n-1)
         data[i], data[j] = data[j], data[i]
+
+my_list = [1,2,3,4,5,6,7,8,9]
+my_shuffle(my_list)
+print(my_list)
