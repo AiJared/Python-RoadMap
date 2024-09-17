@@ -5,7 +5,7 @@ until an EOFError is raised, and then outputs those lines in reverse order
 """
 def inputvalue():
     lines = []
-    print("Enter input (CTR D) to stop: ")
+    print("Enter input (ctr-D) to stop: ")
 
     try:
         # Keep reading until EOFError
