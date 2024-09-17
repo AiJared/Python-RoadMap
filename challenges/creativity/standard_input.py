@@ -4,4 +4,18 @@ until an EOFError is raised, and then outputs those lines in reverse order
 (a user can indicate end of input by typing ctrl-D).
 """
 def inputvalue():
-    input_value = input("Enter an input: ")
+    lines = []
+    print("Enter input (CTR D) to stop: ")
+
+    try:
+        # Keep reading until EOFError
+        while True:
+            line = input()
+            lines.append(line)
+    
+    except EOFError:
+        # Print the lines in reverse order
+        for line in reversed(lines):
+            print(lines)
+
+inputvalue()
