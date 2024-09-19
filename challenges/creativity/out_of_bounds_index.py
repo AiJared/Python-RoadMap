@@ -5,3 +5,10 @@ is out of bounds, the program should catch the exception that results, and
 print the following error message:
 “Don’t try buffer overflow attacks in Python!
 """
+
+a = [1,2,3,4,5]
+
+try:
+    a[5] = 6
+except IndexError:
+    print("Don't try buffer overflow attacks in Python!")
