@@ -9,6 +9,9 @@ print the following error message:
 a = [1,2,3,4,5]
 
 try:
+    # Try to access index 5 which is out of bounds
     a[5] = 6
+
+# Throw an IndexError
 except IndexError:
     print("Don't try buffer overflow attacks in Python!")
