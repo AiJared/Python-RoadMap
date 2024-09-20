@@ -12,4 +12,4 @@ def count_vowels(character_string):
             count += 1
     return count
 
-print(count_vowels("Jared"))
+print(count_vowels("He started small and now he his a co-founder of a multibillion Tech Company."))
