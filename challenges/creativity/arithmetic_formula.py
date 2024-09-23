@@ -5,10 +5,12 @@ formula (in the given order), like “a+ b = c,” “a = b− c,” or “a∗b
 """
 
 def arithmetic_formula():
+    # Getting the three integers via console
     a = int(input("Enter the first integer: "))
     b = int(input("Enter the second integer: "))
     c = int(input("Enter the third integer: "))
 
+    # Check if any of the formalas is correct with the three integers
     if (a +b == c) or (a == b - c) or (a * b == c):
         return True
     else:
