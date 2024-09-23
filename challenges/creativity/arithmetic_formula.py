@@ -9,7 +9,7 @@ def arithmetic_formula():
     b = int(input("Enter the second integer: "))
     c = int(input("Enter the third integer: "))
 
-    if (a+b==c) and (a==b-c) and (a*b==c):
+    if (a +b == c) or (a == b - c) or (a * b == c):
         return True
     else:
         return False
