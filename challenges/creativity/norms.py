@@ -9,3 +9,11 @@ Give an implementation of a function named norm such that norm(v, p) returns the
 value of v and norm(v) returns the Euclidean norm of v. You may assume
 that v is a list of numbers.
 """
+
+def norm(v, p=2):
+    # Compute the p-norm is p is provided
+    return sum(abs(x) ** p for x in v) ** (1/p)
+
+v = [4, 3]
+print(norm(v))
+print(norm(v, 3))
