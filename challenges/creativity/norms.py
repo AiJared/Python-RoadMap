@@ -15,5 +15,5 @@ def norm(v, p=2):
     return sum(abs(x) ** p for x in v) ** (1/p)
 
 v = [4, 3]
-print(norm(v))
-print(norm(v, 3))
+print(norm(v))      # Euclidean norm (default p=2)
+print(norm(v, 3))   # p-norm for p = 3
