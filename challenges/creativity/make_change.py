@@ -53,4 +53,13 @@ def make_change(amount_charged, amount_given):
             change_breakdown[name] = count # add to the breakdown
             change -= count * value # subtract the value from the remaining change
             change = round(change, 2) # avoid floating point for precision
+    
+    # output the result
+    if change_breakdown:
+        print(f"change to give back: {amount_given - amount_charged:.2f}")
+        for denomination, count in change_breakdown.items():
+            print(f"{count} x {denomination}")
+    else:
+        print("No change required!")
+
 
