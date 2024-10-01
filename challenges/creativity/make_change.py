@@ -22,3 +22,11 @@ The denominations are:
 The program calculates the change based on the difference between the amount given and the 
 amount charged.
 """
+
+def make_change(amount_charged, amount_given):
+    # Ensure that the amount is more than or equal to the amount charged
+    if amount_given < amount_charged:
+        return "Error: the amount given is less than the amount charged"
+    
+    # calculate the change amount
+    change = round(amount_given - amount_charged)
