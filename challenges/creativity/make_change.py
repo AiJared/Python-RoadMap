@@ -30,3 +30,15 @@ def make_change(amount_charged, amount_given):
     
     # calculate the change amount
     change = round(amount_given - amount_charged)
+
+    # denominations in US currency (in dollars anc cents)
+    denominations = [
+        ("100 dollar bill", 100.00),
+        ("50 dollar bill", 50.00),
+        ("20 dollar bill", 20.00),
+        ("10 dollar bill", 10.00),
+        ("quaterly (25 cents)", 0.25),
+        ("dime (10 cents)", 0.10),
+        ("nicke (5 cents)", 0.05),
+        ("penny (1 cent)", 0.001)
+    ]
