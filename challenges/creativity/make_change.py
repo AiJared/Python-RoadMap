@@ -43,13 +43,14 @@ def make_change(amount_charged, amount_given):
         ("penny (1 cent)", 0.001)
     ]
 
-# dictionary to store the count of each denominations
-change_breakdown = {}
+    # dictionary to store the count of each denominations
+    change_breakdown = {}
 
-# Go through each denomination and calculate the number of each
-for name, value in change_breakdown:
-    count = int(change // value) # determine how many of these denomination
-    if count > 0:
-        change_breakdown[name] = count # add to the breakdown
-        change -= count * value # subtract the value from the remaining change
-        change = round(change, 2) # avoid floating point for precision
+    # Go through each denomination and calculate the number of each
+    for name, value in change_breakdown:
+        count = int(change // value) # determine how many of these denomination
+        if count > 0:
+            change_breakdown[name] = count # add to the breakdown
+            change -= count * value # subtract the value from the remaining change
+            change = round(change, 2) # avoid floating point for precision
+
