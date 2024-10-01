@@ -47,7 +47,7 @@ def make_change(amount_charged, amount_given):
     change_breakdown = {}
 
     # Go through each denomination and calculate the number of each
-    for name, value in change_breakdown:
+    for name, value in denominations:
         count = int(change // value) # determine how many of these denomination
         if count > 0:
             change_breakdown[name] = count # add to the breakdown
@@ -62,4 +62,6 @@ def make_change(amount_charged, amount_given):
     else:
         print("No change required!")
 
-
+amount_charged = float(input("Enter the amount to be charged: "))
+amount_given = float(input("Enter the amount given: "))
+make_change(amount_charged, amount_given)
