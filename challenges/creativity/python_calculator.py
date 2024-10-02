@@ -7,10 +7,12 @@ to the Python console what would be displayed on your calculator.
 """
 
 def calculator():
+    # User inputs (first number, operator and second number)
     firstnum = float(input("Enter the first number: "))
     operator = input("Enter an operator: ")
     secondnum = float(input("Enter the second number: "))
 
+    # Performing actual operations
     if operator == "+":
         print(firstnum + secondnum)
     elif operator == "-":
@@ -21,4 +23,6 @@ def calculator():
         print(firstnum * secondnum)
     else:
         return "Invalid Operator!"
+
+# function call
 calculator()
