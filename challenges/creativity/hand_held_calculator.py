@@ -15,3 +15,9 @@ the buttons pushed (numbers and operators) and display results after each operat
 2. The calculator evaluates the inputs after user presses the "Enter" key.
 3. The user can type "c" or "clear" to reset the calculator.
 """
+def calculator():
+    print("Welcome to the simulated hand held calculator.")
+    print("Type 'C' or 'clea'r to reset the calculator or exit to quit.")
+
+    # Intialize an empty expression
+    expression = ""
