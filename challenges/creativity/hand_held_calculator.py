@@ -33,4 +33,12 @@ def calculator():
         elif user_input == "c" or user_input == "clear":
             expression = ""
             print("Calculator reset. Enter new expression.")
-        
+        else:
+            # Add the input to current expression
+            expression += user_input
+
+            try:
+                # Evaluate the current expression and show the result
+                result = eval(expression)
+                print(f"Current expression: {expression} = {result}")
+                
