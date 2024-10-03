@@ -21,3 +21,8 @@ def calculator():
 
     # Intialize an empty expression
     expression = ""
+
+    while True:
+        # Take input from the user
+        user_input = input("Enter number, operator(+,-,*,/) or c/clear or exit: ").strip().lower()
+        
