@@ -30,4 +30,7 @@ def calculator():
         if user_input == "exit":
             print("Exiting the calculator. Goodbye!")
             break
+        elif user_input == "c" or user_input == "clear":
+            expression = ""
+            print("Calculator reset. Enter new expression.")
         
