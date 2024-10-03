@@ -24,5 +24,10 @@ def calculator():
 
     while True:
         # Take input from the user
-        user_input = input("Enter number, operator(+,-,*,/) or c/clear or exit: ").strip().lower()
+        user_input = input("Enter number, operator(+,-,*,/) or C to clear: ").strip().lower()
+    
+        # Check if user wants to exit the calculator
+        if user_input == "exit":
+            print("Exiting the calculator. Goodbye!")
+            break
         
