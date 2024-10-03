@@ -41,4 +41,8 @@ def calculator():
                 # Evaluate the current expression and show the result
                 result = eval(expression)
                 print(f"Current expression: {expression} = {result}")
-                
+            except (SyntaxError, ZeroDivisionError, NameError):
+                print("Invalid input or error in expression. Please try again.")
+                expression = "" # reset the expression or error
+
+calculator()  
