@@ -10,5 +10,5 @@ import random
 def introduce_typo(sentence):
     # choose a random position in the sentence to introduce a typo
     typo_index = random.randint(0, len(sentence) - 1)
-    # choose a random character in the sentence to replace the character at typo index
+    # choose a random character to replace the character at typo index
     random_char = chr(random.randint(97, 122)) # random lowercase letter
