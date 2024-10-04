@@ -17,3 +17,8 @@ def introduce_typo(sentence):
     typo_sentence = sentence[:typo_index] + random_char + sentence[typo_index + 1:]
 
     return typo_sentence
+
+def write_with_typos():
+    sentence = "I will never spam my friends again."
+    typo_count = 8
+    typo_position = random.sample(range(1, 101), typo_count) # 8 unique positions out of 100
