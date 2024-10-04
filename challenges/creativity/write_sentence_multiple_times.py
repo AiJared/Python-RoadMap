@@ -27,3 +27,6 @@ def write_with_typos():
         if i in typo_positions:
             # introduce a typo in the sentence
             output_sentence = introduce_typo(sentence)
+        else:
+            # no typo, use the correct sentence
+            output_sentence = sentence
