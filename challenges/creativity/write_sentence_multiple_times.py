@@ -30,3 +30,8 @@ def write_with_typos():
         else:
             # no typo, use the correct sentence
             output_sentence = sentence
+        
+        # Output the sentence with numbering
+        print(f"{i}. {output_sentence}")
+
+write_with_typos()
