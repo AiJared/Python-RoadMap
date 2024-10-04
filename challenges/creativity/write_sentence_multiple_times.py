@@ -12,3 +12,8 @@ def introduce_typo(sentence):
     typo_index = random.randint(0, len(sentence) - 1)
     # choose a random character to replace the character at typo index
     random_char = chr(random.randint(97, 122)) # random lowercase letter
+
+    # create a typo by replacing the character at typo index
+    typo_sentence = sentence[:typo_index] + random_char + sentence[typo_index + 1:]
+
+    return typo_sentence
