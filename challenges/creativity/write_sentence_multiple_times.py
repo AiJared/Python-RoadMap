@@ -21,4 +21,9 @@ def introduce_typo(sentence):
 def write_with_typos():
     sentence = "I will never spam my friends again."
     typo_count = 8
-    typo_position = random.sample(range(1, 101), typo_count) # 8 unique positions out of 100
+    typo_positions = random.sample(range(1, 101), typo_count) # 8 unique positions out of 100
+
+    for i in range(1, 100):
+        if i in typo_positions:
+            # introduce a typo in the sentence
+            output_sentence = introduce_typo(sentence)
