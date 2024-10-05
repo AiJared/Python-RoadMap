@@ -12,3 +12,6 @@ def has_duplicates(birthdays):
     # Return True if there are duplicate birthdays in the list
     return len(birthdays) != len(set(birthdays))
 
+def generate_birthdays(n):
+    # Generate n random birthdays, with each birthday being a number between 1 and 365
+    return [random.randint(1, 365) for _ in range(n)]
