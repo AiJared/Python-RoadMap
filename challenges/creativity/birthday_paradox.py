@@ -6,3 +6,9 @@ but many people find it surprising. Design a Python program that can test
 this paradox by a series of experiments on randomly generated birthdays,
 which test this paradox for n = 5,10,15,20,... ,100.
 """
+import random
+
+def has_duplicates(birthdays):
+    # Return True if there are duplicate birthdays in the list
+    return len(birthdays) != len(set(birthdays))
+
