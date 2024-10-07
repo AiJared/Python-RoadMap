@@ -11,14 +11,15 @@ def merge_sorted_lists(lst1, lst2):
     merged_list = []
     i,j = 0,0
 
-    while i < len(lst1) and j < len(lst2):
-        if lst1[i] < lst2[j]:
+    while i < len(lst1) and j < len(lst2):      # compare the elements of both lists
+        if lst1[i] < lst2[j]:                   # If the element of lst1 is smaller, append it
             merged_list.append(lst1[i])
             i += 1
-        else:
+        else:                                   # Otherwise append the element of lst2                                  
             merged_list.append(lst2[j])
             j += 1
     
+    # Append all the other elements(if any)
     merged_list.extend(lst1[i:])
     merged_list.extend(lst2[j:])
 
