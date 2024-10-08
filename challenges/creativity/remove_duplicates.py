@@ -11,14 +11,15 @@ added already.
 """
 
 def remove_duplicates(lst):
-    unique_elements = []
-    seen = set()
+    unique_elements = [] # Create an empty list that will be used to store the unique elemets
+    seen = set() # Create a set that will be used to track elements that have already been added to the new list
 
-    for num in lst:
-        if num not in seen:
-            unique_elements.append(num)
-            seen.add(num)
+    for num in lst: # Iterate over each element of the original list
+        if num not in seen: # Check if an element has not yet been tracked by the set
+            unique_elements.append(num) # Append elements not yet seen to the unique elements list
+            seen.add(num) # Once an element has been added to unique elements, add it to seen as well
     
+    # Output the new list of unique elements
     return unique_elements
 
 print(remove_duplicates([1,2,2,3,4,4,5]))
