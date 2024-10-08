@@ -22,3 +22,13 @@ def remove_duplicates(lst):
     return unique_elements
 
 print(remove_duplicates([1,2,2,3,4,4,5]))
+
+# Second Approach
+"""
+This approach works by converting the original list into a set so that duplicates can be
+discarded then convert that set into a list again.
+However, it does not guarantee maiting the order of the list but it surely removes the duplicates.
+So if maintaining order matters, then the first approach is the most appropriate but if
+it doesn't then both approaches are better with the second approach even being much simpler to
+implement.
+"""
