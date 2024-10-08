@@ -32,3 +32,9 @@ So if maintaining order matters, then the first approach is the most appropriate
 it doesn't then both approaches are better with the second approach even being much simpler to
 implement.
 """
+
+def rm_duplicates(lst):
+    new_list = list(set(lst))
+    return new_list
+
+print(rm_duplicates([1,2,2,3,4,4,5]))
