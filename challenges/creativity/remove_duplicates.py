@@ -35,7 +35,7 @@ implement.
 """
 
 def rm_duplicates(lst):
-    new_list = list(set(lst))
-    return new_list
+    new_list = list(set(lst)) # convert the original list into a set then convert the set into a list again
+    return new_list # output the new list that has uniqe elements
 
 print(rm_duplicates([1,2,2,3,4,4,5]))
