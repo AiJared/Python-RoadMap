@@ -18,6 +18,6 @@ print(reverse_list([1,2,3,4,5]))
 # Using Slicing
 
 def reverse_lst(n):
-    return n[::-1]
+    return n[::-1] # return the original list in reverse order
 
 print(reverse_lst([1,2,3,4,5]))
