@@ -14,3 +14,10 @@ def reverse_list(n):
     return result_list # return the new reversed list
 
 print(reverse_list([1,2,3,4,5]))
+
+# Using Slicing
+
+def reverse_lst(n):
+    return n[::-1]
+
+print(reverse_lst([1,2,3,4,5]))
