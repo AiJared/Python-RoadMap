@@ -34,4 +34,5 @@ def binary_search(lst, target):
     
     return -1
 
-print(binary_search([]))
+print(binary_search([10, 20, 30, 40, 50], 30))
+print(binary_search([10, 20, 30, 40, 50], 60))
