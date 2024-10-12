@@ -9,3 +9,11 @@ mid for the remaining elements, if it is greater than the initial mid it does th
 The process is repeated unti the target value is either found or not.
 """
 # Steps
+"""
+1. Find the middle element of the list.
+2. If the target equals the middle element return the index of the middle element.
+3. If the target is less than the middle element repeat search for the left half.
+4. If the target is greater than the middle element, repeat search for the right half.
+4. If the range becomes empty return(-1), target not found.
+"""
+
