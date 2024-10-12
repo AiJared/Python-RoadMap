@@ -18,21 +18,26 @@ The process is repeated unti the target value is either found or not.
 """
 
 def binary_search(lst, target):
+    # Create left and right variables for storing each half of the list
     left = 0
     right = len(lst) - 1
 
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left + right) // 2 # Find the middle element
 
+        # return the index of the middle element if it equals the target
         if lst[mid] == target:
             return mid
 
+        # Adjust search to the left side if the target is less than the middle element
         elif lst[mid] > target:
             right = mid - 1
+        # Adjust search to the right side if the target is greater than the middle element
         else:
             left = mid + 1
     
-    return -1
+    # return None if the range becomes empty or target is not found
+    return None
 
 print(binary_search([10, 20, 30, 40, 50], 30))
 print(binary_search([10, 20, 30, 40, 50], 60))
