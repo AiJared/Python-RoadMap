@@ -17,3 +17,21 @@ The process is repeated unti the target value is either found or not.
 4. If the range becomes empty return(-1), target not found.
 """
 
+def binary_search(lst, target):
+    left = 0
+    right = len(lst) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if lst[mid] == target:
+            return mid
+
+        elif lst[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    
+    return -1
+
+print(binary_search([]))
