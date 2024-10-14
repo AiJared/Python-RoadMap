@@ -16,3 +16,18 @@ Operations of an array
  - Deletion: Similar to insertion, deleting from beginning or in the middle requires
  shifting elements.
 """
+# Creating an array in Python
+arr = [1,2,3,4,5]
+# Accessing an element of an array
+print(arr[2])
+# Adding an element at the end of the array
+arr.append(6)
+# Inserting an element at a given position
+arr.insert(2, 7)
+print(arr)
+# Removing an element at the end of the array
+arr.pop()
+print(arr)
+# Removing a specific element
+arr.pop(2)
+print(arr)
