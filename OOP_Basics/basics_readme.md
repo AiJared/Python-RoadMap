@@ -16,3 +16,9 @@ We'll dive into those principles later, now let's start with the building blocks
 A **class** is a **blueprint** or **template** of creating objects. It defines the **attributes** (data) and **methods** (functions) that the objects created from the class will have.
 
 An **object** is an **instance** of a class. You can think of it as an example of the class with real world data. Check out an example Python program demonstrating how classes and objects are created in the file **class_objects.py**.
+
+Let's understand the code:
+
+1. **Class Definition**: We define a class called **Car** using the **class** keyword. Inside the class we have.
+ - **Attributes**: **brand**, **model** and **year**. These describe the state of the class.
+ - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car. 
