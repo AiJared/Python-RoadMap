@@ -2,3 +2,11 @@
 
 Object Oriented Programming is a programming paradigm centered around the concepts of **objects** and **classes**. It allows you to model real word entities as objects in your code and enables you to organize structure your code better.
 
+#### Four Core Principles of OOP
+
+1. Encapsulation
+2. Inheritance
+3. Polymophism
+4. Abstraction
+
+We'll dive into those principles later, now let's start with the building blocks of OOP - **classes** and **objects**.
