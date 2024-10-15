@@ -12,3 +12,9 @@ class Car:
     
 # Creating the attributes of the class
 my_car = Car("Toyota", "Corolla", 2020)
+
+# Accessing the objects of the class
+print(my_car.brand)
+print(my_car.describe())
+print(my_car.model)
+print(my_car.year)
