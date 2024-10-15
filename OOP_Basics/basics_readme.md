@@ -15,4 +15,4 @@ We'll dive into those principles later, now let's start with the building blocks
 
 A **class** is a **blueprint** or **template** of creating objects. It defines the **attributes** (data) and **methods** (functions) that the objects created from the class will have.
 
-An **object** is an **instance** of a class. You can think of it as an example of the class with real world data.
+An **object** is an **instance** of a class. You can think of it as an example of the class with real world data. Check out an example Python program demonstrating how classes and objects are created in the file **class_objects.py**.
