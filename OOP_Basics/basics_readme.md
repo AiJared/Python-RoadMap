@@ -24,3 +24,5 @@ Let's understand the code:
     - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car.
 
 2. **Constructor (__init__)**: The __init__ method is a special method that initializes the objects when it is created. It takes **self** as the first argument which refers to the object itself. We then pass values to the attributes (**brand**, **model** and **year**).
+
+3. **Object Creation**: We create an object **my_car** of the class **Car** with a specific brand **Toyota**, **Corolla** and year **2020**.
