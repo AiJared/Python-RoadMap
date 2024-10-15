@@ -10,3 +10,7 @@ Object Oriented Programming is a programming paradigm centered around the concep
 4. Abstraction
 
 We'll dive into those principles later, now let's start with the building blocks of OOP - **classes** and **objects**.
+
+### Classes and Objects
+
+A class is a **blueprint** or **template** of creating objects. It defines the **attributes** (data) and **methods** (functions) that the objects created from the class will have.
