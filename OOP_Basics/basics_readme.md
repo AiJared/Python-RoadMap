@@ -21,4 +21,6 @@ Let's understand the code:
 
 1. **Class Definition**: We define a class called **Car** using the **class** keyword. Inside the class we have.
     - **Attributes**: **brand**, **model** and **year**. These describe the state of the class.
-    - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car. 
+    - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car.
+
+2. **Constructor (__init__)**: The __init__ method is a special method that initializes the objects when it is created. It takes **self** as the first argument which refers to the object itself. We then pass values to the attributes (**brand**, **model** and **year**).
