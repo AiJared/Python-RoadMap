@@ -10,7 +10,7 @@ class Car:
     def describe(self):
         return f"This car is {self.brand}, {self.model} manufactured in {self.year}"
     
-# Creating the attributes of the class
+# Create an object (instance) of the class
 my_car = Car("Toyota", "Corolla", 2020)
 
 # Accessing the objects of the class
