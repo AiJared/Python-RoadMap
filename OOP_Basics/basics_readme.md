@@ -20,5 +20,5 @@ An **object** is an **instance** of a class. You can think of it as an example o
 Let's understand the code:
 
 1. **Class Definition**: We define a class called **Car** using the **class** keyword. Inside the class we have.
- - **Attributes**: **brand**, **model** and **year**. These describe the state of the class.
- - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car. 
+    - **Attributes**: **brand**, **model** and **year**. These describe the state of the class.
+    - **Methods**: Functions inside a class. This method **describe()** provides a way to describe the car. 
