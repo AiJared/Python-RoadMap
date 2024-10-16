@@ -44,3 +44,13 @@ In Python you can control visibility of attributes by prefixing them with unders
  an attribute and/methods private.
 
  Check out the code in the file **encapsulation.py** for demonstration.
+
+ Let's understand the code:
+
+The class name is Person as defined using the keyword class. The constructor initializes two
+attributes (**name** and **age**) but the two arguments differ in accessibility:
+ - The name attribute is public, meaning that it can be directly accessed outside the class.
+ - The age attribute is private, evidenced by double underscore (**__age**), meaning that
+ it cannot be directly access from the outside.
+ - There is a **describe()** methode that describes the object of the class **Person**.
+ - There is a public method **get_age()** that can access the private attribute __age. This means that the only way to access the attribute __age from the outside is through this method.
