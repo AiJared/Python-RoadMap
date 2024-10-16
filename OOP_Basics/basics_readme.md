@@ -37,3 +37,8 @@ Let's understand the code:
 that operate within a single unit - **the class**. 
 It also controls access to the class by restricting outside inteference making it more 
 modular and secure.
+
+In Python you can control visibility of attributes by prefixing them with underscores.
+ - **Public**: Accessible by everyone (default behavior)
+ - **Private**: Cannot be accessed outside the class. Use **double underscore** (__) to make
+ an attribute and/methods private.
