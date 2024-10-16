@@ -13,4 +13,9 @@ class Person:
     def get_age(self):
         return self.__age
 
+# First object
+person1 = Person("Alice", 30)
+
+# Access attributes and methodes of the object person1
+print(person1.name)
 
