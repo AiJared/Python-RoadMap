@@ -13,9 +13,11 @@ We'll dive into those principles later, now let's start with the building blocks
 
 ### Classes and Objects
 
-A **class** is a **blueprint** or **template** of creating objects. It defines the **attributes** (data) and **methods** (functions) that the objects created from the class will have.
+A **class** is a **blueprint** or **template** of creating objects. 
+It defines the **attributes** (data) and **methods** (functions) that the objects created from the class will have.
 
-An **object** is an **instance** of a class. You can think of it as an example of the class with real world data. Check out an example Python program demonstrating how classes and objects are created in the file **class_objects.py**.
+An **object** is an **instance** of a class. You can think of it as an example of the class with real world data. 
+Check out an example Python program demonstrating how classes and objects are created in the file **class_objects.py**.
 
 Let's understand the code:
 
@@ -28,3 +30,10 @@ Let's understand the code:
 3. **Object Creation**: We create an object **my_car** of the class **Car** with a specific brand **Toyota**, **Corolla** and year **2020**.
 
 4. **Accessing Attributes and Methods**: We can access objects' attributes (like **my_car.brand**) and call methods (like **my_car.describe()**) to perform actions on the object.
+
+### Encapsulation
+
+**Encapsulation** is the idea of building data (attributes) and functions (methods) 
+that operate within a single unit - **the class**. 
+It also controls access to the class by restricting outside inteference making it more 
+modular and secure.
