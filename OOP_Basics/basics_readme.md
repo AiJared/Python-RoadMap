@@ -42,3 +42,5 @@ In Python you can control visibility of attributes by prefixing them with unders
  - **Public**: Accessible by everyone (default behavior)
  - **Private**: Cannot be accessed outside the class. Use **double underscore** (__) to make
  an attribute and/methods private.
+
+ Check out the code in the file **encapsulation.py** for demonstration.
