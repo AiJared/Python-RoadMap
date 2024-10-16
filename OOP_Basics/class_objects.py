@@ -13,7 +13,7 @@ class Car:
 # Create an object (instance) of the class
 my_car = Car("Toyota", "Corolla", 2020)
 
-# Accessing the objects of the class
+# Accessing attributes and methods of the object
 print(my_car.brand)
 print(my_car.describe())
 print(my_car.model)
