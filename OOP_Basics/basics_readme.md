@@ -53,4 +53,10 @@ attributes (**name** and **age**) but the two arguments differ in accessibility:
  - The age attribute is private, evidenced by double underscore (**__age**), meaning that
  it cannot be directly access from the outside.
  - There is a **describe()** methode that describes the object of the class **Person**.
- - There is a public method **get_age()** that can access the private attribute __age. This means that the only way to access the attribute __age from the outside is through this method.
+ - There is a public method **get_age()** that can access the private attribute __age. 
+ This means that the only way to access the attribute __age from the outside is through this method.
+
+### Inheritance
+
+**Inheritance** is a mechanism that allows to inherit the attributes and methods of another
+class. This helps to reuse code and establish relationships between classes.
