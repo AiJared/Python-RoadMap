@@ -63,3 +63,5 @@ class. This helps to reuse code and establish relationships between classes.
 
  - **Parent (super) class**: The class being inherited from.
  - **Child (sub) class**: The class inheriting from the parent class.
+
+Check out a code demonstrating this in the file **inheritance.py**
