@@ -12,3 +12,6 @@ class Dog(Animal):
     def speak(self): # Overriding the parent class's method
         return f"{self.name} barks"
 
+# Create an instance of the class
+dog1 = Dog("Buddy")
+print(dog1.speak())
