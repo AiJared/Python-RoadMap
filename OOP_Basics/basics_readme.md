@@ -60,3 +60,6 @@ attributes (**name** and **age**) but the two arguments differ in accessibility:
 
 **Inheritance** is a mechanism that allows to inherit the attributes and methods of another
 class. This helps to reuse code and establish relationships between classes.
+
+ - **Parent (super) class**: The class being inherited from.
+ - **Child (sub) class**: The class inheriting from the parent class.
