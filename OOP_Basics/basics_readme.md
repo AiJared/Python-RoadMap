@@ -65,3 +65,9 @@ class. This helps to reuse code and establish relationships between classes.
  - **Child (sub) class**: The class inheriting from the parent class.
 
 Check out a code demonstrating this in the file **inheritance.py**
+
+Let's understand the code:
+
+ - **Dog** inherits from the class **Animal** so it has access to the attribute **name** and the
+ method **speak**.
+ - The **speak()** method in the class Dog overrides the one in the class Anima allowing the dog to **bark** instead of making a generic sound. 
