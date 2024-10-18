@@ -18,7 +18,7 @@ class Cat(Animal):
     def speak(self):
         return f"{self.name} meows."
 
-# create a list of animals
+# create a list of animals instances
 animals = [Dog("Buddy"), Cat("Whiskers")]
 
 # Loop through the list of animals and output their sounds
