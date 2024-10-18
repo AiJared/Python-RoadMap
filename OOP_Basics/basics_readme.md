@@ -73,8 +73,8 @@ Let's understand the code:
  - The **speak()** method in the class Dog overrides the one in the class Animal 
  allowing the dog to **bark** instead of making a generic sound. 
 
-### Polymophism
+### Polymorphism
 
-Polymophism allows objects of different classes to be treated as objects of a common superclass.
+Polymorphism allows objects of different classes to be treated as objects of a common superclass.
 This means that even if different classes implement the same method, Python knows which class to
 call based on the object type.
