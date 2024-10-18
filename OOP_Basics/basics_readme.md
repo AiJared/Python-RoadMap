@@ -81,5 +81,4 @@ call based on the object type.
 
 Check out the code in **polymorphism.py** to understand it better.
 
-Let's understand what has been done in the code. Even though both classes of **Dog** and **Cat** have a similar method **speak**, Python knows how to call each method for each class
-separately and accordingly due to **polymorphism**.
+Let's understand what has been done in the code. Even though both classes of **Dog** and **Cat** have a similar method **speak()**, Python knows how to call each one of method for each class separately and accordingly due to **polymorphism**.
