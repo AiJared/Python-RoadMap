@@ -82,3 +82,8 @@ call based on the object type.
 Check out the code in **polymorphism.py** to understand it better.
 
 Let's understand what has been done in the code. Even though both classes of **Dog** and **Cat** have a similar method **speak()**, Python knows how to call each one of method for each class separately and accordingly due to **polymorphism**.
+
+### Abstraction
+
+**Abstraction** is one of the key concepts in OOP, it helps us **simplify complex** sytems by only focusing on essential details and hidding the unnecessary ones. Essentially, it allows us to hide the internal implementation and only show the necessary functionality.
+
