@@ -88,3 +88,8 @@ Let's understand what has been done in the code. Even though both classes of **D
 **Abstraction** is one of the key concepts in OOP, it helps us **simplify complex** sytems by only focusing on essential details and hidding the unnecessary ones. Essentially, it allows us to hide the internal implementation and only show the necessary functionality.
 
 In Python we can achieve abstraction by using **Abstract base classes** and **abstract methods**. Python provides a module called **abc** (abstract base classes) to define abstract classes.
+
+#### Abstract Class and Abstract Methods
+
+ - An abstract class cannot be instantiated directly.
+ - It contains **abstract methods** which are methods that must be implemented by any class that inherits the abstract class.
