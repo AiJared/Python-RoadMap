@@ -92,4 +92,7 @@ In Python we can achieve abstraction by using **Abstract base classes** and **ab
 #### Abstract Class and Abstract Methods
 
  - An abstract class cannot be instantiated directly.
- - It contains **abstract methods** which are methods that must be implemented by any class that inherits the abstract class.
+ - It contains **abstract methods** which are methods that must be implemented by any 
+ class that inherits the abstract class. Check out the implementation in the file **abc.py**
+
+ 
