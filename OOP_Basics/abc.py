@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+# Define an abstract class
 class Shape(ABC):
 
     @abstractmethod
