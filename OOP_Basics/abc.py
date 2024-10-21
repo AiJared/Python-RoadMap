@@ -20,7 +20,7 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height
     
-    def perimenter(self):
+    def perimeter(self):
         return 2 * (self.width + self.height)
 
 class Circle(Shape):
@@ -33,4 +33,10 @@ class Circle(Shape):
     def perimeter(self):
         return 2 * 3.14 * self.radius
 
- 
+# Instantiate the concrete classes
+
+rec = Rectangle(4, 5)
+circle = Circle(3) 
+
+print(f"Rectangle Area: {rec.area()}, Rectangle Perimeter: {rec.perimeter()}")
+print(f"Circle Area: {circle.area()}, Circle Perimenter: {circle.perimeter()}")
