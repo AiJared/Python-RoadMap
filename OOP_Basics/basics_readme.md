@@ -93,6 +93,13 @@ In Python we can achieve abstraction by using **Abstract base classes** and **ab
 
  - An abstract class cannot be instantiated directly.
  - It contains **abstract methods** which are methods that must be implemented by any 
- class that inherits the abstract class. Check out the implementation in the file **abc.py**
-
+ class that inherits the abstract class. 
  
+ Check out the implementation in the file **abc.py**
+
+Let's understand the code:
+
+ - **Shape**: This is an abstract class. It has two abstract methods (**area()** and **perimeter()**). These are **paceholders** they don't have any implementation.
+ - **Rectangle** and **Circle**: These are concrete classes that inherit from the abstract clas. They must provide an implementation of the abstract methods area and perimeter.
+ - The abstract methods ensures that each subclass provides their own way to calculate the area and perimeter.
+
