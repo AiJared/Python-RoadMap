@@ -103,3 +103,6 @@ Let's understand the code:
  - **Rectangle** and **Circle**: These are concrete classes that inherit from the abstract clas. They must provide an implementation of the abstract methods area and perimeter.
  - The abstract methods ensures that each subclass provides their own way to calculate the area and perimeter.
 
+### Why Abstraction?
+
+Abstraction helps to **enforce consistency** in a code making sure that all the subclasses implement all the methods they should even though their actuall implementation may differ. It also simplifies complex systems by only exposing essential details, making the code easier to understand.
