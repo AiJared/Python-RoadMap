@@ -105,4 +105,4 @@ Let's understand the code:
 
 ### Why Abstraction?
 
-Abstraction helps to **enforce consistency** in a code making sure that all the subclasses implement all the methods they should even though their actuall implementation may differ. It also simplifies complex systems by only exposing essential details, making the code easier to understand.
+Abstraction helps to **enforce consistency** in a code making sure that all the subclasses implement all the methods they should even though their actuall implementation may differ. It also simplifies complex systems by only exposing essential details, making the code easier to understand and maintain.
