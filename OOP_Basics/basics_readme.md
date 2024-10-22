@@ -125,3 +125,5 @@ Create an employee management system using OOP principles.Define an abstract cla
 **Employee** that has abstract methods that calculate **salary** and display employee details.
 Then create subclasses for different types of empoyee like **FullTimeEmployee** and **PartTimeEmployee**
 which implement these subclasses. 
+
+Check the code that implements this solution in the file **employee_system.py**
