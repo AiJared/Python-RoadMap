@@ -39,4 +39,10 @@ class PartTimeEmployee(Employee):
     
     def display_employee_details(self):
         return f"Part Time Employee: {self.name}, Salary: ${self.calculate_salary()}"
-    
+
+# Instantiating the objects of the concrete classes
+fulltimeemployee = FullTimeEmployee("Alice", 20000)
+partitmeemployee = PartTimeEmployee("Bob", 75, 80) 
+
+print(fulltimeemployee.display_employee_details())
+print(partitmeemployee.display_employee_details())
