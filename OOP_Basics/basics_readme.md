@@ -112,3 +112,9 @@ Abstraction helps to **enforce consistency** in a code making sure that all the 
 implement all the methods they should even though their actuall implementation may differ. 
 It also simplifies complex systems by only exposing essential details, making the code easier 
 to understand and maintain.
+
+## Practice Problems using OOP
+
+Now that we've covered abstraction, let's move into practicing OOP concepts by actually working
+on some problems. This will help solidify OOP given that at this point you understand 
+encapsulation, inheritance, polymorphism and abstration.
