@@ -123,4 +123,5 @@ encapsulation, inheritance, polymorphism and abstration.
 
 Create an employee management system using OOP principles.Define an abstract class called 
 **Employee** that has abstract methods that calculate **salary** and display employee details.
- 
+Then create subclasses for different types of empoyee like **FullTimeEmployee** and **PartTimeEmployee**
+which implement these subclasses. 
