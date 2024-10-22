@@ -99,10 +99,16 @@ In Python we can achieve abstraction by using **Abstract base classes** and **ab
 
 Let's understand the code:
 
- - **Shape**: This is an abstract class. It has two abstract methods (**area()** and **perimeter()**). These are **paceholders** they don't have any implementation.
- - **Rectangle** and **Circle**: These are concrete classes that inherit from the abstract clas. They must provide an implementation of the abstract methods area and perimeter.
- - The abstract methods ensures that each subclass provides their own way to calculate the area and perimeter.
+ - **Shape**: This is an abstract class. It has two abstract methods (**area()** and **perimeter()**). 
+ These are **paceholders** they don't have any implementation.
+ - **Rectangle** and **Circle**: These are concrete classes that inherit from the abstract class. 
+ They must provide an implementation of the abstract methods area and perimeter.
+ - The abstract methods ensures that each subclass provides their own way to calculate 
+ the area and perimeter.
 
 ### Why Abstraction?
 
-Abstraction helps to **enforce consistency** in a code making sure that all the subclasses implement all the methods they should even though their actuall implementation may differ. It also simplifies complex systems by only exposing essential details, making the code easier to understand and maintain.
+Abstraction helps to **enforce consistency** in a code making sure that all the subclasses 
+implement all the methods they should even though their actuall implementation may differ. 
+It also simplifies complex systems by only exposing essential details, making the code easier 
+to understand and maintain.
