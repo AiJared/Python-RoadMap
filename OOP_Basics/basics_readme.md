@@ -118,3 +118,9 @@ to understand and maintain.
 Now that we've covered abstraction, let's move into practicing OOP concepts by actually working
 on some problems. This will help solidify OOP given that at this point you understand 
 encapsulation, inheritance, polymorphism and abstration.
+
+### 1. Employee Management System
+
+Create an employee management system using OOP principles.Define an abstract class called 
+**Employee** that has abstract methods that calculate **salary** and display employee details.
+ 
