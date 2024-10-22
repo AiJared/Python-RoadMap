@@ -24,4 +24,19 @@ class FullTimeEmployee(Employee):
         return self.base_salary
     
     def display_employee_details(self):
-        return f"{self.name}'s salary is {self.base_salary}"
+        return f"Fulltime Employee: {self.name}, Salary: {self.calculate_salary()}"
+
+# Concrete class PartTimeEmployee that inherits abstract class Employee
+class PartTimeEmployee(Employee):
+    def __init__(self, name, hourly_rate, hours_worked):
+        self.name = name
+        self.hourly_rate = hourly_rate
+        self.hours_worked = hours_worked
+    
+    # must implement abstract methods from abstract class Employee
+    def calculate_salary(self):
+        return self.hourly_rate * self.hours_worked
+    
+    def display_employee_details(self):
+        return f"Part Time Employee: {self.name}, Salary: ${self.calculate_salary()}"
+    
