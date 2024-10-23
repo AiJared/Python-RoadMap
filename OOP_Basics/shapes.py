@@ -42,6 +42,7 @@ triangle = Triangle(10, 5)
 square = Square(4)
 circle = Circle(3)
 
+# Print areas of the shapes using polymorphism
 print_area(triangle)
 print_area(square)
 print_area(circle)
