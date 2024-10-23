@@ -32,3 +32,12 @@ class Circle(Shape):
     # abstract method area that must be implemented from the abstract base class Shape
     def area(self):
         return 3.14 * self.radius ** 2
+
+# Instantiating the objects of the concrete classes
+triangle = Triangle(10, 5)
+square = Square(4)
+circle = Circle(3)
+
+print(triangle.area())
+print(square.area())
+print(circle.area())
