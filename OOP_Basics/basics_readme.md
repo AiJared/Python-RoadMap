@@ -127,3 +127,9 @@ Then create subclasses for different types of empoyee like **FullTimeEmployee** 
 which implement these subclasses. 
 
 Check the code that implements this solution in the file **employee_system.py**
+
+### Shape Claasses with Polymorphism
+
+Create a system where you have different shapes such as **Triangle**, **Circle** and **Square** all inheriting from a base abstract class called **shape**. Each shape must implement a method called **area()** to calculate area.Use **Polymorphism** to write a function that can take any shape and calculate its area.
+
+Check the implement in the file **shapes.py**
