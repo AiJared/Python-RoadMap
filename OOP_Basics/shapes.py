@@ -35,9 +35,13 @@ class Circle(Shape):
 
 # Function that takes any shape and prints its area using Polymorphism
 def print_area(shape: Shape):
-    print(f"The area of {shape} is {shape.area()}") 
+    print(f"The area of shape is {shape.area()}") 
 
 # Instantiating the objects of the concrete classes
 triangle = Triangle(10, 5)
 square = Square(4)
 circle = Circle(3)
+
+print_area(triangle)
+print_area(square)
+print_area(circle)
