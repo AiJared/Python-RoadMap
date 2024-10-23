@@ -46,3 +46,10 @@ circle = Circle(3)
 print_area(triangle)
 print_area(square)
 print_area(circle)
+
+# You can also create a list of objects of concrete classes
+shapes = [Triangle(10, 5), Square(4), Circle(3)]
+
+# Then loop through them as you call the area() method
+for shape in shapes:
+    print(shape.area())
