@@ -136,3 +136,6 @@ Check the implement in the file **shapes.py**
 
 Let's understand the code:
 
+ - We start with an abstract base class **Shape** with an abstractmethod **area()** that must be implemented by concrete classes that will inherit the abstract base class.
+ - Then we create concrete classes for three shapes, that is, **Square**, **Triangle** and **Circle** that inherit the abstract base class Shape.
+ - Then we created a function **print_area()** that prints the areas of the shapes using polymorphism.
