@@ -146,3 +146,7 @@ Let's understand the code:
 Now that you're familiar with OOP concepts, we will move on to implementing OOP on **real world**
 **applications**, **Data Structures**. We will start with a simple data structure like a **stack**.
 
+### Implementing a Stack using OOP
+
+**Stack** is a data structure that uses the **Last-In-First-Out (LIFO)** principle. You can push
+elements onto the stack and pop elements of the stack.
