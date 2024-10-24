@@ -140,3 +140,9 @@ Let's understand the code:
  - Then we create concrete classes for three shapes, that is, **Square**, **Triangle** and **Circle** that inherit the abstract base class Shape.
  - Then we created a function **print_area()** that prints the areas of the shapes using polymorphism.
  - You can also create a list of objects of the concrete classes then loop through them as you call the area() method of each class.
+
+## Implementing OOP on Data Structures
+
+Now that you're familiar with OOP concepts, we will move on to implementing OOP on **real world**
+**applications**, **Data Structures**. We will start with a simple data structure like a **stack**.
+
