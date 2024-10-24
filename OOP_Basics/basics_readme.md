@@ -150,3 +150,5 @@ Now that you're familiar with OOP concepts, we will move on to implementing OOP 
 
 **Stack** is a data structure that uses the **Last-In-First-Out (LIFO)** principle. You can push
 elements onto the stack and pop elements of the stack.
+
+Check the implementation in the file **stack.py**
