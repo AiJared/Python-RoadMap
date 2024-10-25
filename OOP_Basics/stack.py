@@ -28,3 +28,6 @@ class Stack:
     # Check the size of the stack
     def size(self):
         return len(self.items)
+
+# Instantiate Stack object
+my_stack = Stack()
