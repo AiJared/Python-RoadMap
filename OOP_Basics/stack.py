@@ -37,3 +37,5 @@ my_stack.push(10)
 my_stack.push(20)
 my_stack.push(30)
 
+# The topmost item in the stack
+print(my_stack.peek())
