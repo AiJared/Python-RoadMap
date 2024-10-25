@@ -152,3 +152,7 @@ Now that you're familiar with OOP concepts, we will move on to implementing OOP 
 elements onto the stack and pop elements of the stack.
 
 Check the implementation in the file **stack.py**
+
+Let's understand the code:
+
+As explained above in stack data structure, the last item to be pushed in is the first item to be accessed or poped out. In our implementation of the stack data structures there are several methods, that is, for **pushing** items to the items, for **removing** the **topmost** item in the stack, for **checking** the topmost item of the stack without removing it, for checking if the stack **is empty** and for checking the **size** of the stack. 
