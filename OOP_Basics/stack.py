@@ -24,3 +24,7 @@ class Stack:
     # Check if stack is empty
     def is_empty(self):
         return (self.items) == 0
+    
+    # Check the size of the stack
+    def size(self):
+        return len(self.items)
