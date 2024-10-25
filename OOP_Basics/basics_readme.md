@@ -155,4 +155,12 @@ Check the implementation in the file **stack.py**
 
 Let's understand the code:
 
-As explained above in stack data structure, the last item to be pushed in is the first item to be accessed or poped out. In our implementation of the stack data structures there are several methods, that is, for **pushing** items to the items, for **removing** the **topmost** item in the stack, for **checking** the topmost item of the stack without removing it, for checking if the stack **is empty** and for checking the **size** of the stack. 
+As explained above in stack data structure, the last item to be pushed in is the first item to be accessed or poped out. In our implementation of the stack data structures there are several methods, that is, for **pushing** items to the items, for **removing** the **topmost** item in the stack, for **checking** the topmost item of the stack without removing it, for checking if the stack **is empty** and for checking the **size** of the stack.
+
+ - **constructor**: Inside the constructor method, we initialize an empty stack.
+ - **push()**: This method adds items ontop of each other, hence a stack.
+ - **pop()**: This is the method used to remove the topmost item of the stack, remember that a stack is created by putting items ontop of each other so the last item in will always be the first one to be removed.
+ - **peek()**: This method checks the topmost item of the stack without removing it.
+ - **is_empty()**: This is the mothod used to check if the stack is empty.
+ - **size()**: This method is used to check the size of the stack, or the number of items in the stack.
+
