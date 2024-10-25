@@ -41,5 +41,8 @@ my_stack.push(30)
 print(my_stack.peek())
 
 # pop items off of the stack
-print(my_stack.pop(30))
-print(my_stack.pop(20))
+print(my_stack.pop())
+print(my_stack.pop())
+
+# Check the size of the stack
+print(my_stack.size())
