@@ -1,16 +1,22 @@
 # Stack Data Structure
 class Stack:
-    def __init__(self, item):
-        self.item = []
+    def __init__(self):
+        self.items = []
     
     # Push items on top of the stack
-    def add_item(self):
-        return self.item.append()
+    def push(self, item):
+        return self.items.append(item)
     
     # Method to remove item ontop of the stack
-    def remove_item(self):
-        if not self.is_empty:
-            return self.item.pop()
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
         else:
-            return f"Stack is empty!"
+            return "Stack is empty!"
     
+    # The topmost item
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1] # return the top item without removing it
+        else:
+            return "Stack is empty!"
