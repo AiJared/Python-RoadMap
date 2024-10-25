@@ -20,3 +20,7 @@ class Stack:
             return self.items[-1] # return the top item without removing it
         else:
             return "Stack is empty!"
+
+    # Check if stack is empty
+    def is_empty(self):
+        return (self.items) == 0
